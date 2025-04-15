@@ -30,7 +30,6 @@ Sciber gives thorough instructions to the beginning usage of Qt.
 * Stephen Newby [Email]()
                 [Git]()
                 [LinkedIn]()
-* Nash Thames [Email]()
+* Nash Thames [Email](taylor.thames@atlasschool.com)
               [Git]()
               [LinkedIn]()
-
