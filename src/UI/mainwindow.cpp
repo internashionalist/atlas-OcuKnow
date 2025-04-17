@@ -7,7 +7,19 @@
 #include <QObject>
 #include <QEvent>
 
-// set image for eye model
+
+// Intro image -- Away will go with this image
+QGraphicsScene* scene = new QGraphicsScene();
+QGraphicsPixmapItem* item = new QGraphicsPixmapItem(QPixmap("OcuKnow banner final.mp3"));
+scene->addItem(item);
+ui->graphicsView->setScene(scene);
+
+QMediaPlayer* player = new QMediaPlayer();
+player->setMedia(QUrl::fromLocalFile("Meydan-Away Background.mp3"));
+player->play();
+
+
+// set image for eye model -- vibin will go with this image
 QGraphicsScene* scene = new QGraphicsScene();
 QGraphicsPixmapItem* item = new QGraphicsPixmapItem(QPixmap("half eye image.jpg"));
 scene->addItem(item);
