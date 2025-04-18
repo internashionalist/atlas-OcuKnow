@@ -13,7 +13,7 @@ if (pixmap.isNull())
     	qDebug() << "Success";
     }
 
-    // buttons
+    // buttons adjust as needed
     struct EyePart {
         QString name;
         int x, y, width, height;
