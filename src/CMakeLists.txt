@@ -7,7 +7,10 @@ find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets Multimedia)
 
 qt6_add_resources(OcuKnowResources resources.qrc)
 
-qt_add_executable(OcuKnow)
+qt_add_executable(OcuKnow
+	logic/mainwindow.cpp logic/mainwindow.h
+	UI/mainwindow.ui
+)
 
 target_sources(OcuKnow
 	PRIVATE
