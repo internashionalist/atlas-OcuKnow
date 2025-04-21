@@ -1,0 +1,20 @@
+Question: What is an Eye?
+Choice A: A Fleshy Ball
+Choice B: A Vitruous Liquid Container
+Choice C: A Light-Based Sensory Organ
+Choice D: All of the Above
+Answer: D
+
+Question: What is the capital of France?
+Choice A: London
+Choice B: Paris
+Choice C: Rome
+Choice D: Berlin
+Answer: B
+
+Question: What is the largest planet in our solar system?
+Choice A: Mars
+Choice B: Venus
+Choice C: Jupiter
+Choice D: Saturn
+Answer: C
