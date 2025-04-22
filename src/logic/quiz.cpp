@@ -1,15 +1,28 @@
 #include "quiz.h"
-// #include "./ui_quiz.h"
 
-QFont headerFont("Arial", 24, QFont::Bold);
-QFont questionFont("Arial", 18, QFont::Normal);
-QFont textFont("Arial", 12, QFont::Normal);
+QFont headerFont("Orbitron", 24, QFont::Bold);
+QFont questionFont("Orbitron", 18, QFont::Normal);
+QFont textFont("Orbitron", 12, QFont::Normal);
+
+QString buttonStyle = R"(
+    QPushButton {
+        background-color: rgba(255, 255, 255, 180);
+        color: #4FA3E3;
+        font-size: 18px;
+        font-family: 'Orbitron', sans-serif;
+        border: 2px solid #4FA3E3;
+        border-radius: 10px;
+        padding: 5px 20px;
+    }
+    QPushButton:hover {
+        background-color: rgba(255, 255, 255, 210);
+    }
+)";
 
 QVector<Question> Quiz::loadQuestions()
 {
     QVector<Question> questions;
     Question newQuestion;
-    // char sep = ':';
 
     QFile file(":/questions.txt");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
@@ -17,8 +30,7 @@ QVector<Question> Quiz::loadQuestions()
         return questions;
     }
 
-    while (!file.atEnd())
-    {
+    while (!file.atEnd()) {
         QString line = file.readLine();
         if (line.startsWith("Question")) {
             newQuestion.questionText = line.mid(9).trimmed();
@@ -38,107 +50,88 @@ QWidget* Quiz::buildQuizSplashPage()
 {
     QWidget *quizSplashPage = new QWidget;
 
-    //Declare splashPage, initialize and set properties
     QLabel *splashPageHeader = new QLabel("Eye Quizlette");
-    QLabel *splashPageInstruction = new QLabel("Over the next 100 pages you will be asked to answer multiple questions on the eye.\nClick 'Start' to being!");
+    QLabel *splashPageInstruction = new QLabel("Over the next 100 pages you will be asked to answer multiple questions on the eye.\nClick 'Start' to begin!");
     splashPageStart = new QPushButton("Start");
+
     splashPageHeader->setAlignment(Qt::AlignCenter);
     splashPageHeader->setFont(headerFont);
     splashPageInstruction->setWordWrap(true);
     splashPageInstruction->setFont(textFont);
     splashPageInstruction->setAlignment(Qt::AlignCenter);
     splashPageStart->setFont(textFont);
+    splashPageStart->setStyleSheet(buttonStyle);
 
     QVBoxLayout *splashLayout = new QVBoxLayout(quizSplashPage);
+    splashLayout->addStretch();
     splashLayout->addWidget(splashPageHeader);
     splashLayout->addWidget(splashPageInstruction);
     splashLayout->addWidget(splashPageStart);
+    splashLayout->addStretch();
 
     return quizSplashPage;
-}
-
-void Quiz::goToNextQuestion() {
-    int nextIndex = quizPages->currentIndex() + 1;
-    if (nextIndex < quizPages->count()) {
-        quizPages->setCurrentIndex(nextIndex);
-    } else {
-        QWidget *scorePage = buildQuizScorePage();
-        setCentralWidget(scorePage);
-        // quizPages->setCurrentIndex(quizPages->count() - 1); // Show score page
-    }
-}
-
-void Quiz::onStartButtonClicked() {
-    quizPages->setCurrentIndex(1);
 }
 
 QWidget* Quiz::buildQuizQuestionPage(const Question& question, int questionIndex, Quiz* quizWindow) {
     QWidget *page = new QWidget;
     QVBoxLayout *mainLayout = new QVBoxLayout(page);
 
-    // Header - centered
     QLabel *header = new QLabel("Question " + QString::number(questionIndex + 1));
     header->setAlignment(Qt::AlignCenter);
     header->setFont(headerFont);
     mainLayout->addWidget(header);
 
-    // Question text - centered
     QLabel *questionLabel = new QLabel(question.questionText);
     questionLabel->setFont(questionFont);
     questionLabel->setAlignment(Qt::AlignCenter);
+    questionLabel->setWordWrap(true);
     mainLayout->addWidget(questionLabel);
 
-    // Create a container widget for the radio buttons
     QWidget *choicesContainer = new QWidget;
     QVBoxLayout *choicesLayout = new QVBoxLayout(choicesContainer);
 
-    // Create radio buttons
     QVector<QRadioButton*> choiceButtons;
     QButtonGroup *buttonGroup = new QButtonGroup(page);
     for (int i = 0; i < question.choices.size(); ++i) {
         QRadioButton *radio = new QRadioButton(question.choices[i]);
+        radio->setStyleSheet("font-family: 'Orbitron'; font-size: 14px; color: #4FA3E3;");
         choicesLayout->addWidget(radio);
         buttonGroup->addButton(radio, i);
         choiceButtons.append(radio);
     }
 
-    // Remove margins to make it look better
     choicesLayout->setContentsMargins(0, 0, 0, 0);
 
-    // Create a horizontal layout to center the choices container
     QHBoxLayout *centeringLayout = new QHBoxLayout;
-    centeringLayout->addStretch(); // Add stretch on the left
-    centeringLayout->addWidget(choicesContainer); // Add the choices in the middle
-    centeringLayout->addStretch(); // Add stretch on the right
+    centeringLayout->addStretch();
+    centeringLayout->addWidget(choicesContainer);
+    centeringLayout->addStretch();
 
-    // Add the centering layout to the main layout
     mainLayout->addLayout(centeringLayout);
 
-    // Feedback label - centered
     QLabel *feedbackLabel = new QLabel("");
     feedbackLabel->setAlignment(Qt::AlignCenter);
+    feedbackLabel->setFont(textFont);
     mainLayout->addWidget(feedbackLabel);
 
-    // Next button - centered
     QHBoxLayout *buttonLayout = new QHBoxLayout;
     QPushButton *nextButton = new QPushButton("Next");
     nextButton->setEnabled(false);
+    nextButton->setStyleSheet(buttonStyle);
     buttonLayout->addStretch();
     buttonLayout->addWidget(nextButton);
     buttonLayout->addStretch();
     mainLayout->addLayout(buttonLayout);
 
-    // Connect signals and slots as before
     QObject::connect(buttonGroup, QOverload<int>::of(&QButtonGroup::idClicked), [=](int id){
-        // Check if correct
         char selected = 'A' + id;
         if (selected == question.correctAnswer) {
             feedbackLabel->setText("Correct!");
-            feedbackLabel->setStyleSheet("color: green;");
+            feedbackLabel->setStyleSheet("color: #4FA3E3; font-weight: bold;");
             quizWindow->score++;
         } else {
             feedbackLabel->setText(QString("Incorrect! Correct answer: %1").arg(question.correctAnswer));
-            feedbackLabel->setStyleSheet("color: red;");
+            feedbackLabel->setStyleSheet("color: red; font-weight: bold;");
         }
         nextButton->setEnabled(true);
     });
@@ -165,66 +158,61 @@ QWidget* Quiz::buildQuizScorePage()
     scoreText->setText(QString("You successfully answered %1 out of %2!").arg(score).arg(numQuestions));
     header->setAlignment(Qt::AlignCenter);
     header->setFont(headerFont);
-
     scoreText->setAlignment(Qt::AlignCenter);
     scoreText->setFont(textFont);
     scoreText->setWordWrap(true);
 
-    //Add Flavor Text with Percantage and Grade
+    restartButton->setStyleSheet(buttonStyle);
 
     QObject::connect(restartButton, &QPushButton::clicked, this, &Quiz::runQuiz);
 
     return scorePage;
 }
 
-void Quiz::resetQuiz()
-{
+void Quiz::goToNextQuestion() {
+    int nextIndex = quizPages->currentIndex() + 1;
+    if (nextIndex < quizPages->count()) {
+        quizPages->setCurrentIndex(nextIndex);
+    } else {
+        QWidget *scorePage = buildQuizScorePage();
+        setCentralWidget(scorePage);
+    }
+}
+
+void Quiz::onStartButtonClicked() {
+    quizPages->setCurrentIndex(1);
+}
+
+void Quiz::resetQuiz() {
     score = 0;
     quizPages->setCurrentIndex(0);
 }
 
-void Quiz::runQuiz()
-{
+void Quiz::runQuiz() {
     score = 0;
 
     QVector<Question> questions = loadQuestions();
     numQuestions = questions.count();
-    // Create individual Quiz Pages
-    QWidget *quizSplashPage = buildQuizSplashPage();
 
-    //Create stacked widget and insert quiz pages as widgets
+    QWidget *quizSplashPage = buildQuizSplashPage();
     quizPages = new QStackedWidget(this);
     quizPages->addWidget(quizSplashPage);
     for (int i = 0; i < numQuestions; i++)
         quizPages->addWidget(buildQuizQuestionPage(questions[i], i, this));
 
-    //set quizSplashPage to the first widget
     quizPages->setCurrentWidget(quizSplashPage);
 
-    //Create Main Layout, set it to the centrawidget, and load everything in
     QVBoxLayout *mainLayout = new QVBoxLayout;
     mainLayout->addWidget(quizPages);
-
-    //set initial centralWidget to centralWidget
     QWidget *centralWidget = new QWidget(this);
     centralWidget->setLayout(mainLayout);
     setCentralWidget(centralWidget);
 
-    //starts the whole shebang and hopefully takes care of itself
     connect(splashPageStart, &QPushButton::clicked, this, &Quiz::onStartButtonClicked);
 }
 
-Quiz::Quiz(QWidget *parent)
-    : QMainWindow(parent)
-    // , ui(new Ui::Quiz)
-{
-    // ui->setupUi(this);
+Quiz::Quiz(QWidget *parent) : QMainWindow(parent) {
     runQuiz();
 }
 
-//5 anatomical and 5 anatomical questions
-
-Quiz::~Quiz()
-{
-    // delete ui;
-}
+Quiz::~Quiz() {}

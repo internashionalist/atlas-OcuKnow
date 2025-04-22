@@ -8,10 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "" "OcuKnow_autogen/timestamp" "custom" "OcuKnow_autogen/deps"
+  "/root/OcuKnow/src/build/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp" "CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o" "gcc" "CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o.d"
+  "/root/OcuKnow/src/build/OcuKnow_autogen/mocs_compilation.cpp" "CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.o.d"
   "/root/OcuKnow/src/UI/introwidget.cpp" "CMakeFiles/OcuKnow.dir/UI/introwidget.cpp.o" "gcc" "CMakeFiles/OcuKnow.dir/UI/introwidget.cpp.o.d"
-  "/root/OcuKnow/src/build/UI/moc_introwidget.cpp" "CMakeFiles/OcuKnow.dir/UI/moc_introwidget.cpp.o" "gcc" "CMakeFiles/OcuKnow.dir/UI/moc_introwidget.cpp.o.d"
+  "/root/OcuKnow/src/logic/quiz.cpp" "CMakeFiles/OcuKnow.dir/logic/quiz.cpp.o" "gcc" "CMakeFiles/OcuKnow.dir/logic/quiz.cpp.o.d"
   "/root/OcuKnow/src/main.cpp" "CMakeFiles/OcuKnow.dir/main.cpp.o" "gcc" "CMakeFiles/OcuKnow.dir/main.cpp.o.d"
-  "/root/OcuKnow/src/build/qrc_resources.cpp" "CMakeFiles/OcuKnow.dir/qrc_resources.cpp.o" "gcc" "CMakeFiles/OcuKnow.dir/qrc_resources.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
