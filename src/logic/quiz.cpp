@@ -5,19 +5,19 @@ QFont questionFont("Orbitron", 18, QFont::Normal);
 QFont textFont("Orbitron", 12, QFont::Normal);
 
 QString buttonStyle = R"(
-    QPushButton {
-        background-color: rgba(255, 255, 255, 180);
-        color: #4FA3E3;
-        font-size: 18px;
-        font-family: 'Orbitron', sans-serif;
-        border: 2px solid #4FA3E3;
-        border-radius: 10px;
-        padding: 5px 20px;
-    }
-    QPushButton:hover {
-        background-color: rgba(255, 255, 255, 210);
-    }
-)";
+QPushButton {
+    background-color: #4FA3E3;
+    color: white;
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+QPushButton:hover {
+    background-color: white;
+    color: #4FA3E3;
+})";
 
 QVector<Question> Quiz::loadQuestions()
 {
