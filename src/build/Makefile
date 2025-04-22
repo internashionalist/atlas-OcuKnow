@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/OcuKnow/src/build/CMakeFiles /root/OcuKnow/src/build//CMakeFiles/progress.marks
@@ -129,6 +174,80 @@ OcuKnow/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/build
 .PHONY : OcuKnow/fast
 
+#=============================================================================
+# Target rules for targets named OcuKnow_autogen_timestamp_deps
+
+# Build rule for target.
+OcuKnow_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 OcuKnow_autogen_timestamp_deps
+.PHONY : OcuKnow_autogen_timestamp_deps
+
+# fast build rule for target.
+OcuKnow_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow_autogen_timestamp_deps.dir/build.make CMakeFiles/OcuKnow_autogen_timestamp_deps.dir/build
+.PHONY : OcuKnow_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named OcuKnow_autogen
+
+# Build rule for target.
+OcuKnow_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 OcuKnow_autogen
+.PHONY : OcuKnow_autogen
+
+# fast build rule for target.
+OcuKnow_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow_autogen.dir/build.make CMakeFiles/OcuKnow_autogen.dir/build
+.PHONY : OcuKnow_autogen/fast
+
+OcuKnow_autogen/EWIEGA46WW/qrc_resources.o: OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o
+.PHONY : OcuKnow_autogen/EWIEGA46WW/qrc_resources.o
+
+# target to build an object file
+OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o
+.PHONY : OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o
+
+OcuKnow_autogen/EWIEGA46WW/qrc_resources.i: OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : OcuKnow_autogen/EWIEGA46WW/qrc_resources.i
+
+# target to preprocess a source file
+OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.i
+
+OcuKnow_autogen/EWIEGA46WW/qrc_resources.s: OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : OcuKnow_autogen/EWIEGA46WW/qrc_resources.s
+
+# target to generate assembly for a file
+OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.s
+
+OcuKnow_autogen/mocs_compilation.o: OcuKnow_autogen/mocs_compilation.cpp.o
+.PHONY : OcuKnow_autogen/mocs_compilation.o
+
+# target to build an object file
+OcuKnow_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.o
+.PHONY : OcuKnow_autogen/mocs_compilation.cpp.o
+
+OcuKnow_autogen/mocs_compilation.i: OcuKnow_autogen/mocs_compilation.cpp.i
+.PHONY : OcuKnow_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+OcuKnow_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.i
+.PHONY : OcuKnow_autogen/mocs_compilation.cpp.i
+
+OcuKnow_autogen/mocs_compilation.s: OcuKnow_autogen/mocs_compilation.cpp.s
+.PHONY : OcuKnow_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+OcuKnow_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.s
+.PHONY : OcuKnow_autogen/mocs_compilation.cpp.s
+
 UI/introwidget.o: UI/introwidget.cpp.o
 .PHONY : UI/introwidget.o
 
@@ -153,29 +272,29 @@ UI/introwidget.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/introwidget.cpp.s
 .PHONY : UI/introwidget.cpp.s
 
-UI/moc_introwidget.o: UI/moc_introwidget.cpp.o
-.PHONY : UI/moc_introwidget.o
+logic/quiz.o: logic/quiz.cpp.o
+.PHONY : logic/quiz.o
 
 # target to build an object file
-UI/moc_introwidget.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/moc_introwidget.cpp.o
-.PHONY : UI/moc_introwidget.cpp.o
+logic/quiz.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/logic/quiz.cpp.o
+.PHONY : logic/quiz.cpp.o
 
-UI/moc_introwidget.i: UI/moc_introwidget.cpp.i
-.PHONY : UI/moc_introwidget.i
+logic/quiz.i: logic/quiz.cpp.i
+.PHONY : logic/quiz.i
 
 # target to preprocess a source file
-UI/moc_introwidget.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/moc_introwidget.cpp.i
-.PHONY : UI/moc_introwidget.cpp.i
+logic/quiz.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/logic/quiz.cpp.i
+.PHONY : logic/quiz.cpp.i
 
-UI/moc_introwidget.s: UI/moc_introwidget.cpp.s
-.PHONY : UI/moc_introwidget.s
+logic/quiz.s: logic/quiz.cpp.s
+.PHONY : logic/quiz.s
 
 # target to generate assembly for a file
-UI/moc_introwidget.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/moc_introwidget.cpp.s
-.PHONY : UI/moc_introwidget.cpp.s
+logic/quiz.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/logic/quiz.cpp.s
+.PHONY : logic/quiz.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -201,30 +320,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-qrc_resources.o: qrc_resources.cpp.o
-.PHONY : qrc_resources.o
-
-# target to build an object file
-qrc_resources.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/qrc_resources.cpp.o
-.PHONY : qrc_resources.cpp.o
-
-qrc_resources.i: qrc_resources.cpp.i
-.PHONY : qrc_resources.i
-
-# target to preprocess a source file
-qrc_resources.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/qrc_resources.cpp.i
-.PHONY : qrc_resources.cpp.i
-
-qrc_resources.s: qrc_resources.cpp.s
-.PHONY : qrc_resources.s
-
-# target to generate assembly for a file
-qrc_resources.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/qrc_resources.cpp.s
-.PHONY : qrc_resources.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -232,20 +327,29 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... OcuKnow_autogen"
+	@echo "... OcuKnow_autogen_timestamp_deps"
 	@echo "... OcuKnow"
+	@echo "... OcuKnow_autogen/EWIEGA46WW/qrc_resources.o"
+	@echo "... OcuKnow_autogen/EWIEGA46WW/qrc_resources.i"
+	@echo "... OcuKnow_autogen/EWIEGA46WW/qrc_resources.s"
+	@echo "... OcuKnow_autogen/mocs_compilation.o"
+	@echo "... OcuKnow_autogen/mocs_compilation.i"
+	@echo "... OcuKnow_autogen/mocs_compilation.s"
 	@echo "... UI/introwidget.o"
 	@echo "... UI/introwidget.i"
 	@echo "... UI/introwidget.s"
-	@echo "... UI/moc_introwidget.o"
-	@echo "... UI/moc_introwidget.i"
-	@echo "... UI/moc_introwidget.s"
+	@echo "... logic/quiz.o"
+	@echo "... logic/quiz.i"
+	@echo "... logic/quiz.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... qrc_resources.o"
-	@echo "... qrc_resources.i"
-	@echo "... qrc_resources.s"
 .PHONY : help
 
 

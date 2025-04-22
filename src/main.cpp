@@ -6,15 +6,17 @@ int main(int argc, char *argv[])
 {
 	QApplication app(argc, argv);
 
-    // Quiz q; //starts directly with Quiz (for quiz debugging)
-    // q.show();
+	// Quiz q; //starts directly with Quiz (for quiz debugging)
+	// q.show();
 
-    IntroWidget intro;
-    intro.resize(2000, 300);
-    intro.show();
-    IntroWidget intro;
-    intro.resize(2000, 300);
-    intro.show();
+	IntroWidget intro;
+	intro.show();
 
-    return app.exec();
+	QObject::connect(&intro, &IntroWidget::takeQuizClicked, [&]()
+					 {
+	Quiz *quiz = new Quiz();
+	quiz->show();
+	intro.close(); });
+
+	return app.exec();
 }
