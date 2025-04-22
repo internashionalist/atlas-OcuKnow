@@ -1,15 +1,15 @@
-#include "mainwindow.h"
-#include "./ui_mainwindow.h"
+#include "quiz.h"
+// #include "./ui_quiz.h"
 
 QFont headerFont("Arial", 24, QFont::Bold);
 QFont questionFont("Arial", 18, QFont::Normal);
 QFont textFont("Arial", 12, QFont::Normal);
 
-QVector<Question> MainWindow::loadQuestions()
+QVector<Question> Quiz::loadQuestions()
 {
     QVector<Question> questions;
     Question newQuestion;
-    char sep = ':';
+    // char sep = ':';
 
     QFile file(":/questions.txt");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
@@ -34,7 +34,7 @@ QVector<Question> MainWindow::loadQuestions()
     return questions;
 }
 
-QWidget* MainWindow::buildQuizSplashPage()
+QWidget* Quiz::buildQuizSplashPage()
 {
     QWidget *quizSplashPage = new QWidget;
 
@@ -57,7 +57,7 @@ QWidget* MainWindow::buildQuizSplashPage()
     return quizSplashPage;
 }
 
-void MainWindow::goToNextQuestion() {
+void Quiz::goToNextQuestion() {
     int nextIndex = quizPages->currentIndex() + 1;
     if (nextIndex < quizPages->count()) {
         quizPages->setCurrentIndex(nextIndex);
@@ -68,11 +68,11 @@ void MainWindow::goToNextQuestion() {
     }
 }
 
-void MainWindow::onStartButtonClicked() {
+void Quiz::onStartButtonClicked() {
     quizPages->setCurrentIndex(1);
 }
 
-QWidget* MainWindow::buildQuizQuestionPage(const Question& question, int questionIndex, MainWindow* mainWindow) {
+QWidget* Quiz::buildQuizQuestionPage(const Question& question, int questionIndex, Quiz* quizWindow) {
     QWidget *page = new QWidget;
     QVBoxLayout *mainLayout = new QVBoxLayout(page);
 
@@ -135,7 +135,7 @@ QWidget* MainWindow::buildQuizQuestionPage(const Question& question, int questio
         if (selected == question.correctAnswer) {
             feedbackLabel->setText("Correct!");
             feedbackLabel->setStyleSheet("color: green;");
-            mainWindow->score++;
+            quizWindow->score++;
         } else {
             feedbackLabel->setText(QString("Incorrect! Correct answer: %1").arg(question.correctAnswer));
             feedbackLabel->setStyleSheet("color: red;");
@@ -143,14 +143,14 @@ QWidget* MainWindow::buildQuizQuestionPage(const Question& question, int questio
         nextButton->setEnabled(true);
     });
 
-    QObject::connect(nextButton, &QPushButton::clicked, mainWindow, [=]() {
-        mainWindow->goToNextQuestion();
+    QObject::connect(nextButton, &QPushButton::clicked, quizWindow, [=]() {
+        quizWindow->goToNextQuestion();
     });
 
     return page;
 }
 
-QWidget* MainWindow::buildQuizScorePage()
+QWidget* Quiz::buildQuizScorePage()
 {
     QWidget *scorePage = new QWidget;
     QVBoxLayout *layout = new QVBoxLayout(scorePage);
@@ -172,18 +172,18 @@ QWidget* MainWindow::buildQuizScorePage()
 
     //Add Flavor Text with Percantage and Grade
 
-    QObject::connect(restartButton, &QPushButton::clicked, this, &MainWindow::runQuiz);
+    QObject::connect(restartButton, &QPushButton::clicked, this, &Quiz::runQuiz);
 
     return scorePage;
 }
 
-void MainWindow::resetQuiz()
+void Quiz::resetQuiz()
 {
     score = 0;
     quizPages->setCurrentIndex(0);
 }
 
-void MainWindow::runQuiz()
+void Quiz::runQuiz()
 {
     score = 0;
 
@@ -211,20 +211,20 @@ void MainWindow::runQuiz()
     setCentralWidget(centralWidget);
 
     //starts the whole shebang and hopefully takes care of itself
-    connect(splashPageStart, &QPushButton::clicked, this, &MainWindow::onStartButtonClicked);
+    connect(splashPageStart, &QPushButton::clicked, this, &Quiz::onStartButtonClicked);
 }
 
-MainWindow::MainWindow(QWidget *parent)
+Quiz::Quiz(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+    // , ui(new Ui::Quiz)
 {
-    ui->setupUi(this);
+    // ui->setupUi(this);
     runQuiz();
 }
 
 //5 anatomical and 5 anatomical questions
 
-MainWindow::~MainWindow()
+Quiz::~Quiz()
 {
-    delete ui;
+    // delete ui;
 }

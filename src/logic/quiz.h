@@ -1,5 +1,5 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#ifndef QUIZ_H
+#define QUIZ_H
 
 #include <QMainWindow>
 #include <QString>
@@ -15,7 +15,7 @@
 #include <QFont>
 #include <QRadioButton>
 #include <QMessageBox>
-#include <QStringTokenizer.h>
+#include <QStringTokenizer>
 #include <QButtonGroup>
 #include <QDirIterator>
 #include <QDir>
@@ -27,26 +27,26 @@ struct Question {
     char correctAnswer;
 };
 
-QT_BEGIN_NAMESPACE
-namespace Ui {
-class MainWindow;
-}
-QT_END_NAMESPACE
+// QT_BEGIN_NAMESPACE
+// namespace Ui {
+// class Quiz;
+// }
+// QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow
+class Quiz : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+    Quiz(QWidget *parent = nullptr);
+    ~Quiz();
 
 public slots:
     void onStartButtonClicked();
 
 private:
     void runQuiz();
-    QWidget* buildQuizQuestionPage(const Question& question, int questionIndex, MainWindow* mainWindow);
+    QWidget* buildQuizQuestionPage(const Question& question, int questionIndex, Quiz* quizWindow);
     QWidget *buildQuizSplashPage();
     QVector<Question> loadQuestions();
     QWidget* buildQuizScorePage();
@@ -56,9 +56,6 @@ private:
     int score, numQuestions;
     QStackedWidget *quizPages;
     QPushButton *splashPageStart;
-    Ui::MainWindow *ui;
-
-// private slots:
-    // void onStartButtonClicked();
+    // Ui::Quiz *ui;
 };
-#endif // MAINWINDOW_H
+#endif // QUIZ_H

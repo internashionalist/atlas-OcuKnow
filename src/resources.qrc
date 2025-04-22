@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file alias="splash.gif">graphics/ocuknow_intro.gif</file>
+        <file>questions.txt</file>
     </qresource>
 </RCC>
