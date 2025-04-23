@@ -35,13 +35,13 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../Eye Project/Images/half image eye.jpg</pixmap>
+    <pixmap>../Images/half image eye.jpg</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="Fovea">
+  <widget class="QToolButton" name="toolButton">
    <property name="geometry">
     <rect>
      <x>640</x>
@@ -68,7 +68,7 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="VitreousBody">
+  <widget class="QToolButton" name="toolButton_2">
    <property name="geometry">
     <rect>
      <x>460</x>
@@ -95,7 +95,7 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="ChrystallineLens">
+  <widget class="QToolButton" name="toolButton_4">
    <property name="geometry">
     <rect>
      <x>410</x>
@@ -123,7 +123,7 @@ Lens</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="CilliaryBody">
+  <widget class="QToolButton" name="toolButton_5">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -150,7 +150,7 @@ Lens</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="Retina">
+  <widget class="QToolButton" name="toolButton_6">
    <property name="geometry">
     <rect>
      <x>630</x>
@@ -177,7 +177,7 @@ Lens</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="Choroid">
+  <widget class="QToolButton" name="toolButton_7">
    <property name="geometry">
     <rect>
      <x>600</x>
@@ -204,7 +204,7 @@ Lens</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="Sclera">
+  <widget class="QToolButton" name="toolButton_8">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -251,15 +251,6 @@ Lens</string>
    <property name="text">
     <string>Optic Nerve</string>
    </property>
-   <property name="iconSize">
-    <size>
-     <width>16</width>
-     <height>16</height>
-    </size>
-   </property>
-   <property name="autoRepeatDelay">
-    <number>295</number>
-   </property>
    <property name="popupMode">
     <enum>QToolButton::ToolButtonPopupMode::InstantPopup</enum>
    </property>
@@ -291,7 +282,7 @@ Lens</string>
     <string/>
    </property>
    <property name="autoFillBackground">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <property name="text">
     <string>Central Retinal 
@@ -316,7 +307,7 @@ Artery and Vein</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="AqueousHumor">
+  <widget class="QToolButton" name="toolButton_3">
    <property name="geometry">
     <rect>
      <x>280</x>
@@ -344,7 +335,7 @@ Humor</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="PosteriorChamber">
+  <widget class="QToolButton" name="toolButton_11">
    <property name="geometry">
     <rect>
      <x>280</x>
@@ -372,7 +363,7 @@ Chamber</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="Conjuctiva">
+  <widget class="QToolButton" name="toolButton_12">
    <property name="geometry">
     <rect>
      <x>290</x>
@@ -399,7 +390,7 @@ Chamber</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="SuspensoryLigament">
+  <widget class="QToolButton" name="toolButton_13">
    <property name="geometry">
     <rect>
      <x>420</x>
@@ -427,7 +418,7 @@ Ligament</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="OpticDisk">
+  <widget class="QToolButton" name="toolButton_14">
    <property name="geometry">
     <rect>
      <x>540</x>
@@ -454,7 +445,7 @@ Ligament</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="Iris">
+  <widget class="QToolButton" name="toolButton_15">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -484,7 +475,7 @@ Ligament</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="Pupil">
+  <widget class="QToolButton" name="toolButton_16">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -504,12 +495,6 @@ Ligament</string>
    <property name="text">
     <string>Pupil</string>
    </property>
-   <property name="iconSize">
-    <size>
-     <width>16</width>
-     <height>16</height>
-    </size>
-   </property>
    <property name="popupMode">
     <enum>QToolButton::ToolButtonPopupMode::InstantPopup</enum>
    </property>
@@ -517,7 +502,7 @@ Ligament</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="AnteriorChamber">
+  <widget class="QToolButton" name="toolButton_17">
    <property name="geometry">
     <rect>
      <x>290</x>
@@ -545,7 +530,7 @@ Chamber</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="OraSerrata">
+  <widget class="QToolButton" name="toolButton_18">
    <property name="geometry">
     <rect>
      <x>320</x>
@@ -572,7 +557,7 @@ Chamber</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="Macula">
+  <widget class="QToolButton" name="toolButton_19">
    <property name="geometry">
     <rect>
      <x>640</x>
@@ -599,7 +584,7 @@ Chamber</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="HyaloidCanal">
+  <widget class="QToolButton" name="toolButton_20">
    <property name="geometry">
     <rect>
      <x>440</x>
