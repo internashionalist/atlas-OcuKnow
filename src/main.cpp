@@ -1,6 +1,8 @@
 #include <QApplication>
-#include "UI/introwidget.h"
-#include "logic/quiz.h"
+#include "UI/intro/introwidget.h"
+#include "UI/quiz/quiz.h"
+#include "ui_eyemodel.h"
+#include <QDialog>
 
 int main(int argc, char *argv[])
 {
@@ -12,11 +14,21 @@ int main(int argc, char *argv[])
 	IntroWidget intro;
 	intro.show();
 
-	QObject::connect(&intro, &IntroWidget::takeQuizClicked, [&]()
-					 {
+	QObject::connect(&intro, &IntroWidget::takeQuizClicked, [&]() {
 	Quiz *quiz = new Quiz();
 	quiz->show();
-	intro.close(); });
+	intro.close();
+    });
 
-	return app.exec();
+    QObject::connect(&intro, &IntroWidget::enterStudyGuideClicked, [&]() {
+    QDialog *dialog = new QDialog();
+    Ui::Dialog *ui = new Ui::Dialog();
+    ui->setupUi(dialog);
+    dialog->setWindowTitle("Study Guide");
+    intro.close();
+    dialog->setAttribute(Qt::WA_DeleteOnClose);
+    dialog->exec();
+    });
+
+    return app.exec();
 }
