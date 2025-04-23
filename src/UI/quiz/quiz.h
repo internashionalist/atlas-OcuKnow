@@ -55,7 +55,7 @@ private:
 
     int score, numQuestions;
     QStackedWidget *quizPages;
-    QPushButton *splashPageStart;
-    // Ui::Quiz *ui;
+	QPushButton *splashPageStartButton;
+	// Ui::Quiz *ui;
 };
 #endif // QUIZ_H
