@@ -99,7 +99,7 @@ Clicking "Take Quiz" starts a multiple-choice quiz based on `questions.txt`. It 
 
 ## Key Features
 
-- Animated splash screen using GIF
+- Animated splash screen using GIFs
 - Translucent and styled UI buttons
 - Responsive layouts and custom fonts
 - Study Guide with anatomical eye model
@@ -113,17 +113,17 @@ Clicking "Take Quiz" starts a multiple-choice quiz based on `questions.txt`. It 
 - **Ariel Lopez**  
   [GitHub](https://github.com/NKN_Neko)  
   [LinkedIn](https://www.linkedin.com/in/arielnkm369)  
-  [Email](alexandrea.ariel@gmail.com)
+  [Email] (alexandrea.ariel@gmail.com)
 
 - **Stephen Newby**  
   [GitHub](https://github.com/TheSnewby/)  
   [LinkedIn](https://www.linkedin.com/in/stephenjnewby/)  
-  [Email](stephen.j.newby@gmail.com)
+  [Email] (stephen.j.newby@gmail.com)
 
 - **Nash Thames**  
   [GitHub](https://github.com/internashionalist)  
   [LinkedIn](https://www.linkedin.com/in/nashthames/)  
-  [Email](taylor.thames@atlasschool.com)
+  [Email] (taylor.thames@atlasschool.com)
 
 ---
 
