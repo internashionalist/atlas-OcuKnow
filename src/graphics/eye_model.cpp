@@ -71,3 +71,4 @@ if (pixmap.isNull())
     // connect(corneaButton, &QPushButton::clicked, this, []() {
     //     qDebug() << "Cornea button clicked!";
     // });
+    
