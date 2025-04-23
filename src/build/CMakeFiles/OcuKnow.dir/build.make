@@ -69,25 +69,10 @@ include CMakeFiles/OcuKnow.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/OcuKnow.dir/flags.make
 
-OcuKnow_autogen/timestamp: /usr/lib/qt6/libexec/moc
-OcuKnow_autogen/timestamp: /usr/lib/qt6/libexec/uic
-OcuKnow_autogen/timestamp: CMakeFiles/OcuKnow.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/OcuKnow/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target OcuKnow"
-	/usr/bin/cmake -E cmake_autogen /root/OcuKnow/src/build/CMakeFiles/OcuKnow_autogen.dir/AutogenInfo.json ""
-	/usr/bin/cmake -E touch /root/OcuKnow/src/build/OcuKnow_autogen/timestamp
-
-OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /root/OcuKnow/src/resources.qrc
-OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/OcuKnow_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
-OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /root/OcuKnow/src/questions.txt
-OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /root/OcuKnow/src/graphics/ocuknow_intro.gif
-OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /usr/lib/qt6/libexec/rcc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/OcuKnow/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for resources.qrc"
-	/usr/bin/cmake -E cmake_autorcc /root/OcuKnow/src/build/CMakeFiles/OcuKnow_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json 
-
 CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.o: CMakeFiles/OcuKnow.dir/flags.make
 CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.o: OcuKnow_autogen/mocs_compilation.cpp
 CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.o: CMakeFiles/OcuKnow.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/OcuKnow/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/OcuKnow/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.o -MF CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.o -c /root/OcuKnow/src/build/OcuKnow_autogen/mocs_compilation.cpp
 
 CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.i: cmake_force
@@ -98,78 +83,14 @@ CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/OcuKnow/src/build/OcuKnow_autogen/mocs_compilation.cpp -o CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.s
 
-CMakeFiles/OcuKnow.dir/main.cpp.o: CMakeFiles/OcuKnow.dir/flags.make
-CMakeFiles/OcuKnow.dir/main.cpp.o: /root/OcuKnow/src/main.cpp
-CMakeFiles/OcuKnow.dir/main.cpp.o: CMakeFiles/OcuKnow.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/OcuKnow/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OcuKnow.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OcuKnow.dir/main.cpp.o -MF CMakeFiles/OcuKnow.dir/main.cpp.o.d -o CMakeFiles/OcuKnow.dir/main.cpp.o -c /root/OcuKnow/src/main.cpp
-
-CMakeFiles/OcuKnow.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OcuKnow.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/OcuKnow/src/main.cpp > CMakeFiles/OcuKnow.dir/main.cpp.i
-
-CMakeFiles/OcuKnow.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OcuKnow.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/OcuKnow/src/main.cpp -o CMakeFiles/OcuKnow.dir/main.cpp.s
-
-CMakeFiles/OcuKnow.dir/logic/quiz.cpp.o: CMakeFiles/OcuKnow.dir/flags.make
-CMakeFiles/OcuKnow.dir/logic/quiz.cpp.o: /root/OcuKnow/src/logic/quiz.cpp
-CMakeFiles/OcuKnow.dir/logic/quiz.cpp.o: CMakeFiles/OcuKnow.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/OcuKnow/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OcuKnow.dir/logic/quiz.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OcuKnow.dir/logic/quiz.cpp.o -MF CMakeFiles/OcuKnow.dir/logic/quiz.cpp.o.d -o CMakeFiles/OcuKnow.dir/logic/quiz.cpp.o -c /root/OcuKnow/src/logic/quiz.cpp
-
-CMakeFiles/OcuKnow.dir/logic/quiz.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OcuKnow.dir/logic/quiz.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/OcuKnow/src/logic/quiz.cpp > CMakeFiles/OcuKnow.dir/logic/quiz.cpp.i
-
-CMakeFiles/OcuKnow.dir/logic/quiz.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OcuKnow.dir/logic/quiz.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/OcuKnow/src/logic/quiz.cpp -o CMakeFiles/OcuKnow.dir/logic/quiz.cpp.s
-
-CMakeFiles/OcuKnow.dir/UI/introwidget.cpp.o: CMakeFiles/OcuKnow.dir/flags.make
-CMakeFiles/OcuKnow.dir/UI/introwidget.cpp.o: /root/OcuKnow/src/UI/introwidget.cpp
-CMakeFiles/OcuKnow.dir/UI/introwidget.cpp.o: CMakeFiles/OcuKnow.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/OcuKnow/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OcuKnow.dir/UI/introwidget.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OcuKnow.dir/UI/introwidget.cpp.o -MF CMakeFiles/OcuKnow.dir/UI/introwidget.cpp.o.d -o CMakeFiles/OcuKnow.dir/UI/introwidget.cpp.o -c /root/OcuKnow/src/UI/introwidget.cpp
-
-CMakeFiles/OcuKnow.dir/UI/introwidget.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OcuKnow.dir/UI/introwidget.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/OcuKnow/src/UI/introwidget.cpp > CMakeFiles/OcuKnow.dir/UI/introwidget.cpp.i
-
-CMakeFiles/OcuKnow.dir/UI/introwidget.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OcuKnow.dir/UI/introwidget.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/OcuKnow/src/UI/introwidget.cpp -o CMakeFiles/OcuKnow.dir/UI/introwidget.cpp.s
-
-CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/OcuKnow.dir/flags.make
-CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o: OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp
-CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/OcuKnow.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/OcuKnow/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o -MF CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o.d -o CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o -c /root/OcuKnow/src/build/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp
-
-CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/OcuKnow/src/build/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp > CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.i
-
-CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/OcuKnow/src/build/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp -o CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.s
-
 # Object files for target OcuKnow
 OcuKnow_OBJECTS = \
-"CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.o" \
-"CMakeFiles/OcuKnow.dir/main.cpp.o" \
-"CMakeFiles/OcuKnow.dir/logic/quiz.cpp.o" \
-"CMakeFiles/OcuKnow.dir/UI/introwidget.cpp.o" \
-"CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o"
+"CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.o"
 
 # External object files for target OcuKnow
 OcuKnow_EXTERNAL_OBJECTS =
 
 OcuKnow: CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.o
-OcuKnow: CMakeFiles/OcuKnow.dir/main.cpp.o
-OcuKnow: CMakeFiles/OcuKnow.dir/logic/quiz.cpp.o
-OcuKnow: CMakeFiles/OcuKnow.dir/UI/introwidget.cpp.o
-OcuKnow: CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o
 OcuKnow: CMakeFiles/OcuKnow.dir/build.make
 OcuKnow: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 OcuKnow: /usr/lib/x86_64-linux-gnu/libQt6Multimedia.so.6.4.2
@@ -179,7 +100,7 @@ OcuKnow: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 OcuKnow: /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2
 OcuKnow: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 OcuKnow: CMakeFiles/OcuKnow.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/OcuKnow/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable OcuKnow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/OcuKnow/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable OcuKnow"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OcuKnow.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -190,8 +111,7 @@ CMakeFiles/OcuKnow.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/OcuKnow.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/OcuKnow.dir/clean
 
-CMakeFiles/OcuKnow.dir/depend: OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp
-CMakeFiles/OcuKnow.dir/depend: OcuKnow_autogen/timestamp
+CMakeFiles/OcuKnow.dir/depend:
 	cd /root/OcuKnow/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/OcuKnow/src /root/OcuKnow/src /root/OcuKnow/src/build /root/OcuKnow/src/build /root/OcuKnow/src/build/CMakeFiles/OcuKnow.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/OcuKnow.dir/depend
 
