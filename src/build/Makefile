@@ -200,6 +200,30 @@ OcuKnow_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow_autogen.dir/build.make CMakeFiles/OcuKnow_autogen.dir/build
 .PHONY : OcuKnow_autogen/fast
 
+OcuKnow_autogen/EWIEGA46WW/qrc_resources.o: OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o
+.PHONY : OcuKnow_autogen/EWIEGA46WW/qrc_resources.o
+
+# target to build an object file
+OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o
+.PHONY : OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o
+
+OcuKnow_autogen/EWIEGA46WW/qrc_resources.i: OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : OcuKnow_autogen/EWIEGA46WW/qrc_resources.i
+
+# target to preprocess a source file
+OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.i
+
+OcuKnow_autogen/EWIEGA46WW/qrc_resources.s: OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : OcuKnow_autogen/EWIEGA46WW/qrc_resources.s
+
+# target to generate assembly for a file
+OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.s
+
 OcuKnow_autogen/mocs_compilation.o: OcuKnow_autogen/mocs_compilation.cpp.o
 .PHONY : OcuKnow_autogen/mocs_compilation.o
 
@@ -224,6 +248,78 @@ OcuKnow_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.s
 .PHONY : OcuKnow_autogen/mocs_compilation.cpp.s
 
+UI/intro/introwidget.o: UI/intro/introwidget.cpp.o
+.PHONY : UI/intro/introwidget.o
+
+# target to build an object file
+UI/intro/introwidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/intro/introwidget.cpp.o
+.PHONY : UI/intro/introwidget.cpp.o
+
+UI/intro/introwidget.i: UI/intro/introwidget.cpp.i
+.PHONY : UI/intro/introwidget.i
+
+# target to preprocess a source file
+UI/intro/introwidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/intro/introwidget.cpp.i
+.PHONY : UI/intro/introwidget.cpp.i
+
+UI/intro/introwidget.s: UI/intro/introwidget.cpp.s
+.PHONY : UI/intro/introwidget.s
+
+# target to generate assembly for a file
+UI/intro/introwidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/intro/introwidget.cpp.s
+.PHONY : UI/intro/introwidget.cpp.s
+
+UI/quiz/quiz.o: UI/quiz/quiz.cpp.o
+.PHONY : UI/quiz/quiz.o
+
+# target to build an object file
+UI/quiz/quiz.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/quiz/quiz.cpp.o
+.PHONY : UI/quiz/quiz.cpp.o
+
+UI/quiz/quiz.i: UI/quiz/quiz.cpp.i
+.PHONY : UI/quiz/quiz.i
+
+# target to preprocess a source file
+UI/quiz/quiz.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/quiz/quiz.cpp.i
+.PHONY : UI/quiz/quiz.cpp.i
+
+UI/quiz/quiz.s: UI/quiz/quiz.cpp.s
+.PHONY : UI/quiz/quiz.s
+
+# target to generate assembly for a file
+UI/quiz/quiz.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/quiz/quiz.cpp.s
+.PHONY : UI/quiz/quiz.cpp.s
+
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -239,9 +335,21 @@ help:
 	@echo "... OcuKnow_autogen"
 	@echo "... OcuKnow_autogen_timestamp_deps"
 	@echo "... OcuKnow"
+	@echo "... OcuKnow_autogen/EWIEGA46WW/qrc_resources.o"
+	@echo "... OcuKnow_autogen/EWIEGA46WW/qrc_resources.i"
+	@echo "... OcuKnow_autogen/EWIEGA46WW/qrc_resources.s"
 	@echo "... OcuKnow_autogen/mocs_compilation.o"
 	@echo "... OcuKnow_autogen/mocs_compilation.i"
 	@echo "... OcuKnow_autogen/mocs_compilation.s"
+	@echo "... UI/intro/introwidget.o"
+	@echo "... UI/intro/introwidget.i"
+	@echo "... UI/intro/introwidget.s"
+	@echo "... UI/quiz/quiz.o"
+	@echo "... UI/quiz/quiz.i"
+	@echo "... UI/quiz/quiz.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
