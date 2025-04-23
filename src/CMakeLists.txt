@@ -26,6 +26,8 @@ set(PROJECT_SOURCES
     UI/quiz/quiz.h
     UI/intro/introwidget.cpp
     UI/intro/introwidget.h
+    UI/credits/creditswidget.cpp
+    UI/credits/creditswidget.h
     resources.qrc
 )
 

@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o.d"
   "CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/OcuKnow.dir/UI/credits/creditswidget.cpp.o"
+  "CMakeFiles/OcuKnow.dir/UI/credits/creditswidget.cpp.o.d"
   "CMakeFiles/OcuKnow.dir/UI/intro/introwidget.cpp.o"
   "CMakeFiles/OcuKnow.dir/UI/intro/introwidget.cpp.o.d"
   "CMakeFiles/OcuKnow.dir/UI/quiz/quiz.cpp.o"
