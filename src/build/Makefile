@@ -248,6 +248,30 @@ OcuKnow_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.s
 .PHONY : OcuKnow_autogen/mocs_compilation.cpp.s
 
+UI/credits/creditswidget.o: UI/credits/creditswidget.cpp.o
+.PHONY : UI/credits/creditswidget.o
+
+# target to build an object file
+UI/credits/creditswidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/credits/creditswidget.cpp.o
+.PHONY : UI/credits/creditswidget.cpp.o
+
+UI/credits/creditswidget.i: UI/credits/creditswidget.cpp.i
+.PHONY : UI/credits/creditswidget.i
+
+# target to preprocess a source file
+UI/credits/creditswidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/credits/creditswidget.cpp.i
+.PHONY : UI/credits/creditswidget.cpp.i
+
+UI/credits/creditswidget.s: UI/credits/creditswidget.cpp.s
+.PHONY : UI/credits/creditswidget.s
+
+# target to generate assembly for a file
+UI/credits/creditswidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/credits/creditswidget.cpp.s
+.PHONY : UI/credits/creditswidget.cpp.s
+
 UI/intro/introwidget.o: UI/intro/introwidget.cpp.o
 .PHONY : UI/intro/introwidget.o
 
@@ -341,6 +365,9 @@ help:
 	@echo "... OcuKnow_autogen/mocs_compilation.o"
 	@echo "... OcuKnow_autogen/mocs_compilation.i"
 	@echo "... OcuKnow_autogen/mocs_compilation.s"
+	@echo "... UI/credits/creditswidget.o"
+	@echo "... UI/credits/creditswidget.i"
+	@echo "... UI/credits/creditswidget.s"
 	@echo "... UI/intro/introwidget.o"
 	@echo "... UI/intro/introwidget.i"
 	@echo "... UI/intro/introwidget.s"

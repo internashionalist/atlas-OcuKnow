@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "OcuKnow_autogen/timestamp" "custom" "OcuKnow_autogen/deps"
   "/root/OcuKnow/src/build/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp" "CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o" "gcc" "CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o.d"
   "/root/OcuKnow/src/build/OcuKnow_autogen/mocs_compilation.cpp" "CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.o.d"
+  "/root/OcuKnow/src/UI/credits/creditswidget.cpp" "CMakeFiles/OcuKnow.dir/UI/credits/creditswidget.cpp.o" "gcc" "CMakeFiles/OcuKnow.dir/UI/credits/creditswidget.cpp.o.d"
   "/root/OcuKnow/src/UI/intro/introwidget.cpp" "CMakeFiles/OcuKnow.dir/UI/intro/introwidget.cpp.o" "gcc" "CMakeFiles/OcuKnow.dir/UI/intro/introwidget.cpp.o.d"
   "/root/OcuKnow/src/UI/quiz/quiz.cpp" "CMakeFiles/OcuKnow.dir/UI/quiz/quiz.cpp.o" "gcc" "CMakeFiles/OcuKnow.dir/UI/quiz/quiz.cpp.o.d"
   "/root/OcuKnow/src/main.cpp" "CMakeFiles/OcuKnow.dir/main.cpp.o" "gcc" "CMakeFiles/OcuKnow.dir/main.cpp.o.d"
