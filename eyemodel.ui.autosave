@@ -82,17 +82,8 @@
      <family>Berlin Sans FB</family>
     </font>
    </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
    <property name="text">
     <string>Vitreous body</string>
-   </property>
-   <property name="popupMode">
-    <enum>QToolButton::ToolButtonPopupMode::InstantPopup</enum>
-   </property>
-   <property name="autoRaise">
-    <bool>true</bool>
    </property>
   </widget>
   <widget class="QToolButton" name="toolButton_4">
@@ -109,18 +100,9 @@
      <family>Berlin Sans FB</family>
     </font>
    </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
    <property name="text">
     <string>Chrystalline 
 Lens</string>
-   </property>
-   <property name="popupMode">
-    <enum>QToolButton::ToolButtonPopupMode::InstantPopup</enum>
-   </property>
-   <property name="autoRaise">
-    <bool>true</bool>
    </property>
   </widget>
   <widget class="QToolButton" name="toolButton_5">
@@ -137,17 +119,8 @@ Lens</string>
      <family>Berlin Sans FB</family>
     </font>
    </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
    <property name="text">
     <string>Ciliary Body</string>
-   </property>
-   <property name="popupMode">
-    <enum>QToolButton::ToolButtonPopupMode::InstantPopup</enum>
-   </property>
-   <property name="autoRaise">
-    <bool>true</bool>
    </property>
   </widget>
   <widget class="QToolButton" name="toolButton_6">
@@ -164,17 +137,8 @@ Lens</string>
      <family>Berlin Sans FB</family>
     </font>
    </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
    <property name="text">
     <string>Retina</string>
-   </property>
-   <property name="popupMode">
-    <enum>QToolButton::ToolButtonPopupMode::InstantPopup</enum>
-   </property>
-   <property name="autoRaise">
-    <bool>true</bool>
    </property>
   </widget>
   <widget class="QToolButton" name="toolButton_7">
@@ -191,17 +155,8 @@ Lens</string>
      <family>Berlin Sans FB</family>
     </font>
    </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
    <property name="text">
     <string>Choroid</string>
-   </property>
-   <property name="popupMode">
-    <enum>QToolButton::ToolButtonPopupMode::InstantPopup</enum>
-   </property>
-   <property name="autoRaise">
-    <bool>true</bool>
    </property>
   </widget>
   <widget class="QToolButton" name="toolButton_8">
@@ -218,17 +173,11 @@ Lens</string>
      <family>Berlin Sans FB</family>
     </font>
    </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
    <property name="text">
     <string>Sclera</string>
    </property>
    <property name="popupMode">
     <enum>QToolButton::ToolButtonPopupMode::InstantPopup</enum>
-   </property>
-   <property name="autoRaise">
-    <bool>true</bool>
    </property>
   </widget>
   <widget class="QToolButton" name="toolButton_9">
@@ -321,18 +270,9 @@ Artery and Vein</string>
      <family>Berlin Sans FB</family>
     </font>
    </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
    <property name="text">
     <string>Aqueous 
 Humor</string>
-   </property>
-   <property name="popupMode">
-    <enum>QToolButton::ToolButtonPopupMode::InstantPopup</enum>
-   </property>
-   <property name="autoRaise">
-    <bool>true</bool>
    </property>
   </widget>
   <widget class="QToolButton" name="toolButton_11">
@@ -349,18 +289,9 @@ Humor</string>
      <family>Berlin Sans FB</family>
     </font>
    </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
    <property name="text">
     <string>Posterior 
 Chamber</string>
-   </property>
-   <property name="popupMode">
-    <enum>QToolButton::ToolButtonPopupMode::InstantPopup</enum>
-   </property>
-   <property name="autoRaise">
-    <bool>true</bool>
    </property>
   </widget>
   <widget class="QToolButton" name="toolButton_12">
@@ -377,17 +308,8 @@ Chamber</string>
      <family>Berlin Sans FB</family>
     </font>
    </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
    <property name="text">
     <string>Conjuctiva</string>
-   </property>
-   <property name="popupMode">
-    <enum>QToolButton::ToolButtonPopupMode::InstantPopup</enum>
-   </property>
-   <property name="autoRaise">
-    <bool>true</bool>
    </property>
   </widget>
   <widget class="QToolButton" name="toolButton_13">
@@ -404,18 +326,9 @@ Chamber</string>
      <family>Berlin Sans FB</family>
     </font>
    </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
    <property name="text">
     <string>Suspensory 
 Ligament</string>
-   </property>
-   <property name="popupMode">
-    <enum>QToolButton::ToolButtonPopupMode::InstantPopup</enum>
-   </property>
-   <property name="autoRaise">
-    <bool>true</bool>
    </property>
   </widget>
   <widget class="QToolButton" name="toolButton_14">
@@ -432,17 +345,8 @@ Ligament</string>
      <family>Berlin Sans FB</family>
     </font>
    </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
    <property name="text">
     <string>Optic Disk</string>
-   </property>
-   <property name="popupMode">
-    <enum>QToolButton::ToolButtonPopupMode::InstantPopup</enum>
-   </property>
-   <property name="autoRaise">
-    <bool>true</bool>
    </property>
   </widget>
   <widget class="QToolButton" name="toolButton_15">
@@ -459,20 +363,11 @@ Ligament</string>
      <family>Berlin Sans FB</family>
     </font>
    </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
    <property name="mouseTracking">
     <bool>true</bool>
    </property>
    <property name="text">
     <string>Iris</string>
-   </property>
-   <property name="popupMode">
-    <enum>QToolButton::ToolButtonPopupMode::InstantPopup</enum>
-   </property>
-   <property name="autoRaise">
-    <bool>true</bool>
    </property>
   </widget>
   <widget class="QToolButton" name="toolButton_16">
@@ -495,12 +390,6 @@ Ligament</string>
    <property name="text">
     <string>Pupil</string>
    </property>
-   <property name="popupMode">
-    <enum>QToolButton::ToolButtonPopupMode::InstantPopup</enum>
-   </property>
-   <property name="autoRaise">
-    <bool>true</bool>
-   </property>
   </widget>
   <widget class="QToolButton" name="toolButton_17">
    <property name="geometry">
@@ -516,18 +405,9 @@ Ligament</string>
      <family>Berlin Sans FB</family>
     </font>
    </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
    <property name="text">
     <string>Anterior 
 Chamber</string>
-   </property>
-   <property name="popupMode">
-    <enum>QToolButton::ToolButtonPopupMode::InstantPopup</enum>
-   </property>
-   <property name="autoRaise">
-    <bool>true</bool>
    </property>
   </widget>
   <widget class="QToolButton" name="toolButton_18">
@@ -544,17 +424,8 @@ Chamber</string>
      <family>Berlin Sans FB</family>
     </font>
    </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
    <property name="text">
     <string>Ora Serrata</string>
-   </property>
-   <property name="popupMode">
-    <enum>QToolButton::ToolButtonPopupMode::InstantPopup</enum>
-   </property>
-   <property name="autoRaise">
-    <bool>true</bool>
    </property>
   </widget>
   <widget class="QToolButton" name="toolButton_19">
@@ -571,17 +442,8 @@ Chamber</string>
      <family>Berlin Sans FB</family>
     </font>
    </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
    <property name="text">
     <string>Macula</string>
-   </property>
-   <property name="popupMode">
-    <enum>QToolButton::ToolButtonPopupMode::InstantPopup</enum>
-   </property>
-   <property name="autoRaise">
-    <bool>true</bool>
    </property>
   </widget>
   <widget class="QToolButton" name="toolButton_20">
@@ -598,18 +460,9 @@ Chamber</string>
      <family>Berlin Sans FB</family>
     </font>
    </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
    <property name="text">
     <string>Hyaloid 
 Canal</string>
-   </property>
-   <property name="popupMode">
-    <enum>QToolButton::ToolButtonPopupMode::InstantPopup</enum>
-   </property>
-   <property name="autoRaise">
-    <bool>true</bool>
    </property>
   </widget>
  </widget>
