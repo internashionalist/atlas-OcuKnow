@@ -12,17 +12,24 @@
 #include "eye_model.h"
 // #include "ui_eye_model.h"
 
-Eye_model::Eye_model(QWidget *parent) : QWidget(parent),
-    ui(new Ui::Eye_model)
+EyeModel::EyeModel(QWidget *parent) : QWidget(parent),
+    ui(new Ui::EyeModel)
 {
-    QPixmap image("/halfeyeimage.jpg");
-    ui->label->setPixmap(image);
+    QPixmap pixmap("/eye.png");
+    QPixmap scaledPixmap = pixmap.scaled(300, 200, Qt::KeepAspectRatio, Qt::SmoothTransformation);
+    ui->label->setPixmap(scaledPixmap);
+
+    // ui->label->setPixmap(pixmap.scaled(ui->label->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
+    // ui->label->setPixmap(image);
 
     if (image.isNull())
     {
         qDebug() << "Error";
     } else {
-    	ui->label->setPixmap(image);
+        QPixmap scaledPixmap = pixmap.scaled(300, 200, Qt::KeepAspectRatio, Qt::SmoothTransformation);
+        ui->label->setPixmap(scaledPixmap);
+
+    	// /ui->label->setPixmap(image.scaled(ui->label->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
     	qDebug() << "Success";
     }
 
