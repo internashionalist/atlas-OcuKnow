@@ -15,14 +15,14 @@
 Eye_model::Eye_model(QWidget *parent) : QWidget(parent),
     ui(new Ui::Eye_model)
 {
-    QPixmap pixmap("/halfeyeimage.jpg");
-    ui->label->setPixmap(pixmap);
+    QPixmap image("/halfeyeimage.jpg");
+    ui->label->setPixmap(image);
 
-    if (pixmap.isNull())
+    if (image.isNull())
     {
         qDebug() << "Error";
     } else {
-    	ui->label->setPixmap(pixmap);
+    	ui->label->setPixmap(image);
     	qDebug() << "Success";
     }
 
