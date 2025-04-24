@@ -2,6 +2,9 @@
 
 IntroWidget::IntroWidget(QWidget *parent) : QWidget(parent)
 {
+	setMinimumSize(1200, 800);
+	setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+
 	/* set-up for layout of both widgets */
 	QVBoxLayout *mainLayout = new QVBoxLayout(this);
 	mainLayout->setContentsMargins(0, 0, 0, 0);

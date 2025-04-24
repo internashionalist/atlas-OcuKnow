@@ -9,6 +9,8 @@
 #include <QVBoxLayout>
 #include <QStackedLayout>
 #include <QSoundEffect>
+#include <QMediaPlayer>
+
 
 class IntroWidget : public QWidget
 {
