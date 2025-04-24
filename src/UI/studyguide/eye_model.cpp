@@ -8,11 +8,11 @@
 #include <QMediaPlayer>
 #include <QAudioOutput>
 #include <QApplication>
-#include <QWidget>
+#include <QDialog>
 #include "eye_model.h"
 #include "ui_eye_model.h"
 
-Eye_model::Eye_model(QWidget *parent) : QWidget(parent), ui(new Ui::Eye_model)
+Eye_model::Eye_model(QWidget *parent) : QDialog(parent), ui(new Ui::Dialog)
 {
 	ui->setupUi(this);
 
@@ -99,9 +99,9 @@ It is flexible and can change shape to focus on objects at different distances.<
 <li>retinopathy - disease of the retina</li>
 <li>retinal detachment - separation of the retina from the underlying tissue</li>
 <li>Inner layer of the eye, contains photoreceptor cells (rods and cones) that convert light into electrical signals.\nThese signals are sent to the brain via the optic nerve.</li>
-<ul>)DELIM");
+</ul>)DELIM");
 
-    ui->Vitreous Body->setToolTip(R"DELIM(Vitreous Body
+    ui->VitreousBody->setToolTip(R"DELIM(Vitreous Body
 <ul>
 <li>vitre/o - vitreous</li>
 <li>vitreous humor - clear gel-like substance that fills the space between the lens and retina</li>
@@ -109,15 +109,15 @@ It is flexible and can change shape to focus on objects at different distances.<
 <li>vitreous body - the clear gel-like substance that fills the space between the lens and retina</li>
 <li>vitreous cavity - the space filled with vitreous humor</li>
 <li>Vitreous humor is a clear gel-like substance that fills the space between the lens and retina.\nIt helps maintain the shape of the eye and provides support to the retina.</li>
-<ul>)DELIM");
+</ul>)DELIM");
 
-    ui->Optic Disk->setToolTip(R"DELIM(Optic Disk
+    ui->OpticDisk->setToolTip(R"DELIM(Optic Disk
 <ul>
 <li>papill/o - optic disk</li>
 <li>Known as the blind spot, located on the retina. Visible point where the optic nerve leaves the eyeball and where retinal blood vessels enter and leave.</li>
-<ul>)DELIM");
+</ul>)DELIM");
     
-    ui->Optic Nerve->setToolTip(R"DELIM(Optic Nerve)DELIM");
+    ui->OpticNerve->setToolTip(R"DELIM(Optic Nerve)DELIM");
 
 }
 
