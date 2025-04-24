@@ -11,27 +11,21 @@
 #include <QMediaPlayer>
 #include <QAudioOutput>
 
-class EyeModel : public QDialog
+#include "ui_eyemodel.h"
+
+namespace Ui
+{
+	class EyeModel;
+}
+class EyeModel : public QWidget
 {
     Q_OBJECT
 public:
     explicit EyeModel(QWidget *parent = nullptr);
     ~EyeModel();
 
-signals:
-	void takeQuizClicked();
-	void creditsClicked();
-	void returnToIntro();
-
-private slots:
-	void handleTakeQuiz();
-	void handleCredits();
-
 private:
-	Ui::EyeModel *ui;
-	QPushButton *takeQuizButton;
-	QPushButton *creditsButton;
-
+    Ui::EyeModel *ui;
 };
 
 #endif

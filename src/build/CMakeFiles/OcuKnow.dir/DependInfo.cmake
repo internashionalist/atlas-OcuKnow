@@ -14,7 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/root/OcuKnow/src/UI/credits/creditswidget.cpp" "CMakeFiles/OcuKnow.dir/UI/credits/creditswidget.cpp.o" "gcc" "CMakeFiles/OcuKnow.dir/UI/credits/creditswidget.cpp.o.d"
   "/root/OcuKnow/src/UI/intro/introwidget.cpp" "CMakeFiles/OcuKnow.dir/UI/intro/introwidget.cpp.o" "gcc" "CMakeFiles/OcuKnow.dir/UI/intro/introwidget.cpp.o.d"
   "/root/OcuKnow/src/UI/quiz/quiz.cpp" "CMakeFiles/OcuKnow.dir/UI/quiz/quiz.cpp.o" "gcc" "CMakeFiles/OcuKnow.dir/UI/quiz/quiz.cpp.o.d"
-  "/root/OcuKnow/src/UI/studyguide/eye_model.cpp" "CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o" "gcc" "CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o.d"
+  "/root/OcuKnow/src/UI/studyguide/eyemodel.cpp" "CMakeFiles/OcuKnow.dir/UI/studyguide/eyemodel.cpp.o" "gcc" "CMakeFiles/OcuKnow.dir/UI/studyguide/eyemodel.cpp.o.d"
   "/root/OcuKnow/src/main.cpp" "CMakeFiles/OcuKnow.dir/main.cpp.o" "gcc" "CMakeFiles/OcuKnow.dir/main.cpp.o.d"
   )
 
