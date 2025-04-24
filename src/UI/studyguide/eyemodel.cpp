@@ -8,7 +8,13 @@
 #include <QMediaPlayer>
 #include <QAudioOutput>
 #include <QApplication>
-#include <QDialog>
+#include <QWidget>
+#include <QUrl>
+#include <QSizePolicy>
+#include <QFileInfo>
+#include <QToolButton>
+#include <QPushButton>
+#include <QHBoxLayout>
 // <<<<<<< Ariel
 // #include "eye_model.h"
 // #include "ui_eye_model.h"
@@ -27,7 +33,6 @@
 // =======
 #include <QFileInfo>
 #include "eyemodel.h"
-#include "ui_eyemodel.h"
 
 EyeModel::EyeModel(QWidget *parent)
 	: QWidget(parent), ui(new Ui::EyeModel)
@@ -36,9 +41,10 @@ EyeModel::EyeModel(QWidget *parent)
 		ui->setupUi(this);
 		// QPixmap pixmap("C:/Users/Alexa/OneDrive/Desktop/Eye Project/OcuKnow/src/assets/halfeyeimage2.png");
 
+		QLabel *ImageEye = new QLabel(this);
 		QPixmap pixmap(":/assets/halfeyeimage2.png");
 		qDebug() << "Image exists:" << QFileInfo(":/assets/halfeyeimage2.png").exists();
-		ui->label->setPixmap(pixmap.scaled(ui->label->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
+		ui->ImageEye->setPixmap(pixmap.scaled(ui->ImageEye->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
 
 		// ui->label->setPixmap(pixmap.scaled(ui->label->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
 		// ui->label->setPixmap(image);
@@ -49,7 +55,7 @@ EyeModel::EyeModel(QWidget *parent)
 		}
 		else
 		{
-			ui->label->setPixmap(pixmap);
+			ui->ImageEye->setPixmap(pixmap);
 			qDebug() << "Success";
 		}
 
