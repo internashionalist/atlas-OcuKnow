@@ -1,6 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file alias="splash.gif">assets/ocuknow_intro.gif</file>
+        <file alias="halfeyeimage.jpg">assets/halfeyeimage.jpg</file>
         <file alias="meydan_away.ogg">assets/meydan_away.ogg</file>
         <file alias="vibin_chosic.ogg">assets/vibin_chosic.ogg</file>
         <file alias="questions.txt">assets/questions.txt</file>

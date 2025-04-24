@@ -15,14 +15,15 @@
 Eye_model::Eye_model(QWidget *parent) : QWidget(parent),
     ui(new Ui::Eye_model)
 {
-    QPixmap image("/halfeyeimage.jpg");
-    ui->label->setPixmap(image);
+    QPixmap pixmap("/halfeyeimage.jpg");
+    // QPixmap pixmap("C:\Users\Alexa\OneDrive\Desktop\Eye Project\OcuKnow\src\assets");
+    ui->label->setPixmap(pixmap);
 
-    if (image.isNull())
+    if (pixmap.isNull())
     {
         qDebug() << "Error";
     } else {
-    	ui->label->setPixmap(image);
+        ui->label->setPixmap(pixmap);
     	qDebug() << "Success";
     }
 
@@ -31,7 +32,7 @@ QMediaPlayer *player = new QMediaPlayer(this);
 QMediaPlaylist *playlist = new QMediaPlaylist(player);
 
 
-playlist->addMedia(QUrl("/Vibin-chosic favorite.mp3"));
+playlist->addMedia(QUrl::fromLocalFile("/Vibin-chosic favorite.mp3"));
 playlist->setPlaybackMode(QMediaPlaylist::Loop); // Loops continuously
 
 player->setPlaylist(playlist);
