@@ -10,6 +10,15 @@
     <height>469</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <hintingpreference>PreferDefaultHinting</hintingpreference>
+    <fontweight>Medium</fontweight>
+   </font>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::FocusPolicy::NoFocus</enum>
+  </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
@@ -35,7 +44,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../../../../Images/halfeyeimage2.png</pixmap>
+    <pixmap>../../assets/halfeyeimage2.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -53,6 +62,8 @@
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -80,6 +91,8 @@
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -107,6 +120,8 @@
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -135,6 +150,8 @@ Lens</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -162,6 +179,8 @@ Lens</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -189,6 +208,8 @@ Lens</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -216,6 +237,8 @@ Lens</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -243,6 +266,8 @@ Lens</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -270,6 +295,8 @@ Lens</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -319,6 +346,8 @@ Artery and Vein</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -347,6 +376,8 @@ Humor</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -375,6 +406,8 @@ Chamber</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -402,6 +435,8 @@ Chamber</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -430,6 +465,8 @@ Ligament</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -457,6 +494,8 @@ Ligament</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -514,6 +553,8 @@ Ligament</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -541,6 +582,8 @@ Ligament</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -569,6 +612,8 @@ Chamber</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -596,6 +641,8 @@ Chamber</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -623,6 +670,8 @@ Chamber</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
