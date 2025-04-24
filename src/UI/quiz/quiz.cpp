@@ -24,7 +24,7 @@ QVector<Question> Quiz::loadQuestions()
     QVector<Question> questions;
     Question newQuestion;
 
-    QFile file(":/questions.txt");
+    QFile file(":/UI/quiz/questions.txt");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         qDebug() << "Failed to open questions.txt";
         return questions;
@@ -168,7 +168,7 @@ QWidget* Quiz::buildQuizScorePage()
 	}
 	else if (percentScore >= 80)
 	{
-		colorTextGradeQuip += "B.\nCongratulations! You are now an Opthamologist Fellowship ready to hold the sweat sponge in surgery!";
+        colorTextGradeQuip += "B.\nCongratulations! You are now an Opthamologist in Fellowship ready to hold the sweat sponge in surgery!";
 	}
 	else if (percentScore >= 70)
 	{
@@ -264,11 +264,12 @@ void Quiz::runQuiz() {
 
     quizPages->setCurrentWidget(quizSplashPage);
 
-    QVBoxLayout *mainLayout = new QVBoxLayout;
-    mainLayout->addWidget(quizPages);
-    QWidget *centralWidget = new QWidget(this);
-    centralWidget->setLayout(mainLayout);
-    setCentralWidget(centralWidget);
+    // QVBoxLayout *mainLayout = new QVBoxLayout;
+    // mainLayout->addWidget(quizPages);
+    // QWidget *centralWidget = new QWidget(this);
+    // centralWidget->setLayout(mainLayout);
+    // setCentralWidget(centralWidget);
+    setCentralWidget(quizPages);
 
 	connect(splashPageStartButton, &QPushButton::clicked, this, &Quiz::onStartButtonClicked);
 }

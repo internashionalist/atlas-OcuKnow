@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	QObject::connect(&intro, &IntroWidget::takeQuizClicked, [&]() {
 		Quiz *quiz = new Quiz();
 		quiz->show();
-		intro.close();
+		intro.hide();
     });
 
     QObject::connect(&intro, &IntroWidget::enterStudyGuideClicked, [&]() {
@@ -28,15 +28,20 @@ int main(int argc, char *argv[])
         studyGuide->setWindowTitle("Study Guide");
         studyGuide->setAttribute(Qt::WA_DeleteOnClose);
         studyGuide->show();
-        intro.close();
+        intro.hide();
     });
 
-    QObject::connect(&intro, &IntroWidget::creditsClicked, [&]() {
-		CreditsWidget *credits = new CreditsWidget();
-		credits->setWindowTitle("Credits");
-		credits->show();
-		intro.close();
-    });
+	QObject::connect(&intro, &IntroWidget::creditsClicked, [&]() {
+    	CreditsWidget *credits = new CreditsWidget();
+    	credits->setWindowTitle("Credits");
 
-    return app.exec();
+    	QObject::connect(credits, &CreditsWidget::returnToIntro, [&]() {
+        	intro.show();
+    	});
+
+    	credits->show();
+    	intro.hide();
+	});
+
+	return app.exec();
 }

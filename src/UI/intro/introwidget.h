@@ -18,6 +18,7 @@ signals:
 	void enterStudyGuideClicked();
 	void takeQuizClicked();
 	void creditsClicked();
+	void returnToIntro();
 
 private slots:
 	void handleEnterStudyGuide();

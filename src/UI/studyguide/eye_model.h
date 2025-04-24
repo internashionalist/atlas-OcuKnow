@@ -11,6 +11,7 @@
 #include <QMediaPlayer>
 #include <QMediaPlaylist>
 
+
 class Eye_model : public QWindow
 {
     Q_OBJECT
@@ -22,6 +23,7 @@ private slots:
     void insertBoldText();
     void insertItalicText();
     void insertUnderlinedText();
+
 };
 
-#endif 
+#endif
