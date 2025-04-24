@@ -42,14 +42,14 @@ EyeModel::EyeModel(QWidget *parent)
 	audioOutput->setVolume(0.5);
 	player->play();
 
-	ui->Iris->setToolTip(R"DELIM(Iris
-<ul>
-<li>ir/o - iris</li>
-<li>irid/o - iris</li>
-<li>iridal - pertaining to the iris</li>
-<li>iridectomy - excision of the iris</li>
-<li>Regulates the amount of light that enters your eye by controlling dilation and constriction. It is the coloured, visible part of your eye in front of the lens. Located behind the cornea and in front of the crystalline lens, this structure separates the anterior and posterior chambers of the eye.</li>
-</ul>)DELIM");
+	ui->Iris->setToolTip("Iris"
+"<ul>"
+"<li>ir/o - iris</li>"
+"<li>irid/o - iris</li>"
+"<li>iridal - pertaining to the iris</li>"
+"<li>iridectomy - excision of the iris</li>"
+"<li>Regulates the amount of light that enters your eye by controlling dilation and constriction. It is the coloured, visible part of your eye in front of the lens. Located behind the cornea and in front of the crystalline lens, this structure separates the anterior and posterior chambers of the eye.</li>"
+"</ul>)");
 
 	ui->Pupil->setToolTip(R"DELIM(Pupil
 <ul>

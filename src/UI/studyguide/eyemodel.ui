@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>Dialog</class>
- <widget class="QDialog" name="Dialog">
+ <widget class="QWidget" name="EyeModel">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -10,10 +10,19 @@
     <height>469</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <hintingpreference>PreferDefaultHinting</hintingpreference>
+    <fontweight>Medium</fontweight>
+   </font>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::FocusPolicy::NoFocus</enum>
+  </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="ImageEye">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -35,13 +44,13 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>src\assets\halfeyeimage2.png</pixmap>
+    <pixmap>../../assets/halfeyeimage2.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton">
+  <widget class="QToolButton" name="Fovea">
    <property name="geometry">
     <rect>
      <x>600</x>
@@ -53,6 +62,8 @@
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -68,7 +79,7 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton_2">
+  <widget class="QToolButton" name="VitreousBody">
    <property name="geometry">
     <rect>
      <x>460</x>
@@ -80,6 +91,8 @@
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -95,7 +108,7 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton_4">
+  <widget class="QToolButton" name="CrystallineLens">
    <property name="geometry">
     <rect>
      <x>370</x>
@@ -107,13 +120,15 @@
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="text">
-    <string>Chrystaline 
+    <string>Crystaline 
 Lens</string>
    </property>
    <property name="popupMode">
@@ -123,7 +138,7 @@ Lens</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton_5">
+  <widget class="QToolButton" name="CilliaryBody">
    <property name="geometry">
     <rect>
      <x>360</x>
@@ -135,6 +150,8 @@ Lens</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -150,7 +167,7 @@ Lens</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton_6">
+  <widget class="QToolButton" name="Retina">
    <property name="geometry">
     <rect>
      <x>600</x>
@@ -162,6 +179,8 @@ Lens</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -177,7 +196,7 @@ Lens</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton_7">
+  <widget class="QToolButton" name="Choroid">
    <property name="geometry">
     <rect>
      <x>560</x>
@@ -189,6 +208,8 @@ Lens</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -204,7 +225,7 @@ Lens</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton_8">
+  <widget class="QToolButton" name="Sclera">
    <property name="geometry">
     <rect>
      <x>130</x>
@@ -216,6 +237,8 @@ Lens</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -231,7 +254,7 @@ Lens</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton_9">
+  <widget class="QToolButton" name="OpticNerve">
    <property name="geometry">
     <rect>
      <x>730</x>
@@ -243,6 +266,8 @@ Lens</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -258,7 +283,7 @@ Lens</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton_10">
+  <widget class="QToolButton" name="RetinalArteryAndVein">
    <property name="geometry">
     <rect>
      <x>630</x>
@@ -270,6 +295,8 @@ Lens</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -307,7 +334,7 @@ Artery and Vein</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton_3">
+  <widget class="QToolButton" name="AgueousHumor">
    <property name="geometry">
     <rect>
      <x>350</x>
@@ -319,6 +346,8 @@ Artery and Vein</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -335,7 +364,7 @@ Humor</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton_11">
+  <widget class="QToolButton" name="PosteriorChamber">
    <property name="geometry">
     <rect>
      <x>400</x>
@@ -347,6 +376,8 @@ Humor</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -363,7 +394,7 @@ Chamber</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton_12">
+  <widget class="QToolButton" name="Conjuctiva">
    <property name="geometry">
     <rect>
      <x>330</x>
@@ -375,6 +406,8 @@ Chamber</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -390,7 +423,7 @@ Chamber</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton_13">
+  <widget class="QToolButton" name="SuspensoryLigament">
    <property name="geometry">
     <rect>
      <x>370</x>
@@ -402,6 +435,8 @@ Chamber</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -418,7 +453,7 @@ Ligament</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton_14">
+  <widget class="QToolButton" name="OpticDisk">
    <property name="geometry">
     <rect>
      <x>590</x>
@@ -430,6 +465,8 @@ Ligament</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -445,7 +482,7 @@ Ligament</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton_15">
+  <widget class="QToolButton" name="Iris">
    <property name="geometry">
     <rect>
      <x>130</x>
@@ -457,6 +494,8 @@ Ligament</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -475,7 +514,7 @@ Ligament</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton_16">
+  <widget class="QToolButton" name="Pupil">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -514,6 +553,8 @@ Ligament</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -529,7 +570,7 @@ Ligament</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton_17">
+  <widget class="QToolButton" name="AnteriorChamber">
    <property name="geometry">
     <rect>
      <x>340</x>
@@ -541,6 +582,8 @@ Ligament</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -557,7 +600,7 @@ Chamber</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton_18">
+  <widget class="QToolButton" name="OraSerrata">
    <property name="geometry">
     <rect>
      <x>390</x>
@@ -569,6 +612,8 @@ Chamber</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -584,7 +629,7 @@ Chamber</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton_19">
+  <widget class="QToolButton" name="Macula">
    <property name="geometry">
     <rect>
      <x>600</x>
@@ -596,6 +641,8 @@ Chamber</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -611,7 +658,7 @@ Chamber</string>
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QToolButton" name="toolButton_20">
+  <widget class="QToolButton" name="HyaloidCanal">
    <property name="geometry">
     <rect>
      <x>440</x>
@@ -623,6 +670,8 @@ Chamber</string>
    <property name="font">
     <font>
      <family>Berlin Sans FB</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
