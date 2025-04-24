@@ -9,21 +9,25 @@
 #include <QAction>
 #include <QVBoxLayout>
 #include <QMediaPlayer>
-#include <QWindow>
+#include <QWidget>
 
+#include "ui_eye_model.h"
 
-class Eye_model : public QWindow
+class Eye_model : public QWidget
 {
-    Q_OBJECT
+	Q_OBJECT
+
 public:
-    explicit Eye_model(QWidget *parent = nullptr);
-    ~Eye_model();
+	explicit Eye_model(QWidget *parent = nullptr);
+	~Eye_model();
+
+private:
+	Ui::Eye_model *ui;
 
 private slots:
-    void insertBoldText();
-    void insertItalicText();
-    void insertUnderlinedText();
-
+	void insertBoldText();
+	void insertItalicText();
+	void insertUnderlinedText();
 };
 
 #endif

@@ -320,6 +320,30 @@ UI/quiz/quiz.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/quiz/quiz.cpp.s
 .PHONY : UI/quiz/quiz.cpp.s
 
+UI/studyguide/eye_model.o: UI/studyguide/eye_model.cpp.o
+.PHONY : UI/studyguide/eye_model.o
+
+# target to build an object file
+UI/studyguide/eye_model.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o
+.PHONY : UI/studyguide/eye_model.cpp.o
+
+UI/studyguide/eye_model.i: UI/studyguide/eye_model.cpp.i
+.PHONY : UI/studyguide/eye_model.i
+
+# target to preprocess a source file
+UI/studyguide/eye_model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.i
+.PHONY : UI/studyguide/eye_model.cpp.i
+
+UI/studyguide/eye_model.s: UI/studyguide/eye_model.cpp.s
+.PHONY : UI/studyguide/eye_model.s
+
+# target to generate assembly for a file
+UI/studyguide/eye_model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.s
+.PHONY : UI/studyguide/eye_model.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -374,6 +398,9 @@ help:
 	@echo "... UI/quiz/quiz.o"
 	@echo "... UI/quiz/quiz.i"
 	@echo "... UI/quiz/quiz.s"
+	@echo "... UI/studyguide/eye_model.o"
+	@echo "... UI/studyguide/eye_model.i"
+	@echo "... UI/studyguide/eye_model.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

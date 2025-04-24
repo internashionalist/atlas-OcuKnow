@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/OcuKnow.dir/UI/intro/introwidget.cpp.o.d"
   "CMakeFiles/OcuKnow.dir/UI/quiz/quiz.cpp.o"
   "CMakeFiles/OcuKnow.dir/UI/quiz/quiz.cpp.o.d"
+  "CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o"
+  "CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o.d"
   "CMakeFiles/OcuKnow.dir/main.cpp.o"
   "CMakeFiles/OcuKnow.dir/main.cpp.o.d"
   "OcuKnow"

@@ -30,6 +30,7 @@ set(PROJECT_SOURCES
     UI/credits/creditswidget.h
     UI/studyguide/eye_model.cpp
     UI/studyguide/eye_model.h
+	UI/studyguide/eye_model.ui
     resources.qrc
 )
 
