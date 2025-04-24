@@ -12,10 +12,33 @@
 #include "eye_model.h"
 // #include "ui_eye_model.h"
 
-Eye_model::Eye_model(QWidget *parent) :
-    QWidget(parent),
+Eye_model::Eye_model(QWidget *parent) : QWidget(parent),
     ui(new Ui::Eye_model)
 {
+    QPixmap pixmap("/halfeyeimage.jpg");
+    ui->label->setPixmap(pixmap);
+
+    if (pixmap.isNull())
+    {
+        qDebug() << "Error";
+    } else {
+    	ui->label->setPixmap(pixmap);
+    	qDebug() << "Success";
+    }
+
+
+QMediaPlayer *player = new QMediaPlayer(this);
+QMediaPlaylist *playlist = new QMediaPlaylist(player);
+
+
+playlist->addMedia(QUrl("/Vibin-chosic favorite.mp3"));
+playlist->setPlaybackMode(QMediaPlaylist::Loop); // Loops continuously
+
+player->setPlaylist(playlist);
+player->setVolume(50);
+player->play();
+
+
     ui->setupUi(this);
     ui->Iris->setToolTip("Iris"
 "<ul>"
@@ -47,7 +70,7 @@ It is the dark center in the middle of the iris.</li>")
 "<li>keratoplasty - surgical repair of the cornea</li>"
 "corneal - pertaining to the cornea
 Transparent circular part of the front eye, refracts the light entering the eye onto the lens and then onto the retina.\nContains no blood vessels and extremely sensitive to pain"
-"<ul>"
+"<ul>")
 
     ui->Sclera->setToolTip("Sclera"
 "<ul>"
@@ -56,7 +79,7 @@ Transparent circular part of the front eye, refracts the light entering the eye 
 "<li>scleritis - inflammation of the sclera</li>"
 "<li>sclerotomy - incision of the sclera</li>"
 "<li>White part of the eye, protects the inner structures of the eye and maintains the shape of the eyeball.</li>"
-"<ul>"
+"<ul>")
 
     ui->Choroid->setToolTip("Choroid"
 "<ul>"
@@ -66,7 +89,7 @@ Transparent circular part of the front eye, refracts the light entering the eye 
 "<li>choroidopathy - disease of the choroid</li>"
 "<li>choroidectomy - excision of the choroid</li>"
 "<li>Middle layer of the eye, contains blood vessels and connective tissue.\nIt is located between the sclera and retina.</li>"
-"<ul>"
+"<ul>")
 
     ui->Lens->setToolTip("Lens"
 "<ul>"
@@ -77,7 +100,7 @@ Transparent circular part of the front eye, refracts the light entering the eye 
 "<li>phacoemulsification - process of using ultrasound to break up a lens</li>"
 "<li>Transparent structure located behind the iris and pupil, refracts light onto the retina.\n
 It is flexible and can change shape to focus on objects at different distances.</li>"
-"<ul>"
+"<ul>")
 
     ui->Retina->setToolTip("Retina"
 "<ul>"
@@ -87,7 +110,7 @@ It is flexible and can change shape to focus on objects at different distances.<
 "<li>retinopathy - disease of the retina</li>"
 "<li>retinal detachment - separation of the retina from the underlying tissue</li>"
 "<li>Inner layer of the eye, contains photoreceptor cells (rods and cones) that convert light into electrical signals.\nThese signals are sent to the brain via the optic nerve.</li>"
-"<ul>"
+"<ul>")
 
     ui->Vitreous Body->setToolTip("Vitreous Body"
 "<ul>"
@@ -97,59 +120,22 @@ It is flexible and can change shape to focus on objects at different distances.<
 "<li>vitreous body - the clear gel-like substance that fills the space between the lens and retina</li>"
 "<li>vitreous cavity - the space filled with vitreous humor</li>"
 "<li>Vitreous humor is a clear gel-like substance that fills the space between the lens and retina.\nIt helps maintain the shape of the eye and provides support to the retina.</li>"
-"<ul>"
+"<ul>")
 
     ui->Optic Disk->setToolTip("Optic Disk"
 "<ul>"
 "<li>papill/o - optic disk</li>"
 "<li>Known as the blind spot, located on the retina. Visible point where the optic nerve leaves the eyeball and where retinal blood vessels enter and leave.</li>"
-"<ul>"
+"<ul>")
     
         ui->Optic Nerve->setToolTip("Optic Nerve")
 
 }
 
-QPixmap pixmap(":assets/halfeyeimage.jpg");
-ui->label->setPixmap(pixmap);
 
-if (pixmap.isNull())
-    {
-        qDebug() << "Error";
-    } else {
-    	ui->label->setPixmap(pixmap);
-    	qDebug() << "Success";
-    }
+// Prob don't need this
 
+// QToolButton *toolButton = new QToolButton(this);
+// toolButton->setText("Insert Text");
+// toolButton->setPopupMode(QToolButton::MenuButtonPopup);
 
-QMediaPlayer *player = new QMediaPlayer(this);
-QMediaPlaylist *playlist = new QMediaPlaylist(player);
-
-
-playlist->addMedia(QUrl("Vibin-chosic favorite.mp3"));
-playlist->setPlaybackMode(QMediaPlaylist::Loop); // Loops continuously
-
-player->setPlaylist(playlist);
-player->setVolume(50);
-player->play();
-
-QToolButton *toolButton = new QToolButton(this);
-toolButton->setText("Insert Text");
-toolButton->setPopupMode(QToolButton::MenuButtonPopup);
-
-QMenu *menu = new QMenu(toolButton);
-menu->addAction("Bold Text", this, SLOT(insertBoldText()));
-menu->addAction("Italic Text", this, SLOT(insertItalicText()));
-menu->addAction("Underlined Text", this, SLOT(insertUnderlinedText()));
-toolButton->setMenu(menu);
-
-void DropMenu::insertBoldText() {
-    yourTextWidget->setText("<b>Bold Text</b>");
-}
-
-void DropMenu::insertItalicText() {
-    yourTextWidget->setText("<i>Italic Text</i>");
-}
-
-void DropMenu::insertUnderlinedText() {
-    yourTextWidget->setText("<u>Underlined Text</u>");
-}

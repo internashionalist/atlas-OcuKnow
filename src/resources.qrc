@@ -4,6 +4,10 @@
     </qresource>
 
 	<qresource prefix="/">
+	<file alias="halfeyeimage.png">assets/halfeyeimage.png</file>
+	</qresource>
+
+	<qresource prefix="/">
 		<file alias="meydan_away.ogg">assets/meydan_away.ogg</file>
 	</qresource>
 
