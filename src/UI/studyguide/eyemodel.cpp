@@ -37,7 +37,7 @@ EyeModel::EyeModel(QWidget *parent) : QWidget(parent),
 	QMediaPlayer *player = new QMediaPlayer(this);
 	QAudioOutput *audioOutput = new QAudioOutput(this);
 	player->setAudioOutput(audioOutput);
-	player->setSource(QUrl("qrc:/assets/meydan_away.ogg"));
+	player->setSource(QUrl("qrc:/assets/vibin_chosic.ogg"));
 	audioOutput->setVolume(0.5);
 	player->play();
 
