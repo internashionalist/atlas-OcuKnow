@@ -78,9 +78,9 @@ OcuKnow_autogen/timestamp: CMakeFiles/OcuKnow.dir/compiler_depend.ts
 
 OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /root/OcuKnow/src/resources.qrc
 OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/OcuKnow_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
-OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /root/OcuKnow/src/assets/meydan_away2.ogg
 OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /root/OcuKnow/src/assets/questions.txt
 OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /root/OcuKnow/src/assets/ocuknow_intro.gif
+OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /root/OcuKnow/src/assets/halfeyeimage2.png
 OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /root/OcuKnow/src/assets/vibin_chosic.ogg
 OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /root/OcuKnow/src/assets/meydan_away.ogg
 OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /usr/lib/qt6/libexec/rcc
@@ -157,10 +157,24 @@ CMakeFiles/OcuKnow.dir/UI/credits/creditswidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OcuKnow.dir/UI/credits/creditswidget.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/OcuKnow/src/UI/credits/creditswidget.cpp -o CMakeFiles/OcuKnow.dir/UI/credits/creditswidget.cpp.s
 
+CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o: CMakeFiles/OcuKnow.dir/flags.make
+CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o: /root/OcuKnow/src/UI/studyguide/eye_model.cpp
+CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o: CMakeFiles/OcuKnow.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/OcuKnow/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o -MF CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o.d -o CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o -c /root/OcuKnow/src/UI/studyguide/eye_model.cpp
+
+CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/OcuKnow/src/UI/studyguide/eye_model.cpp > CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.i
+
+CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/OcuKnow/src/UI/studyguide/eye_model.cpp -o CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.s
+
 CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/OcuKnow.dir/flags.make
 CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o: OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp
 CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/OcuKnow.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/OcuKnow/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/OcuKnow/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o -MF CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o.d -o CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o -c /root/OcuKnow/src/build/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp
 
 CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.i: cmake_force
@@ -178,6 +192,7 @@ OcuKnow_OBJECTS = \
 "CMakeFiles/OcuKnow.dir/UI/quiz/quiz.cpp.o" \
 "CMakeFiles/OcuKnow.dir/UI/intro/introwidget.cpp.o" \
 "CMakeFiles/OcuKnow.dir/UI/credits/creditswidget.cpp.o" \
+"CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o" \
 "CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o"
 
 # External object files for target OcuKnow
@@ -188,6 +203,7 @@ OcuKnow: CMakeFiles/OcuKnow.dir/main.cpp.o
 OcuKnow: CMakeFiles/OcuKnow.dir/UI/quiz/quiz.cpp.o
 OcuKnow: CMakeFiles/OcuKnow.dir/UI/intro/introwidget.cpp.o
 OcuKnow: CMakeFiles/OcuKnow.dir/UI/credits/creditswidget.cpp.o
+OcuKnow: CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o
 OcuKnow: CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o
 OcuKnow: CMakeFiles/OcuKnow.dir/build.make
 OcuKnow: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
@@ -198,7 +214,7 @@ OcuKnow: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 OcuKnow: /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2
 OcuKnow: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 OcuKnow: CMakeFiles/OcuKnow.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/OcuKnow/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable OcuKnow"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/root/OcuKnow/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable OcuKnow"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OcuKnow.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
