@@ -24,7 +24,7 @@ QVector<Question> Quiz::loadQuestions()
     QVector<Question> questions;
     Question newQuestion;
 
-    QFile file(":/UI/quiz/questions.txt");
+    QFile file(":/questions.txt");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         qDebug() << "Failed to open questions.txt";
         return questions;
