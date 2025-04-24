@@ -16,7 +16,7 @@ EyeModel::EyeModel(QWidget *parent) : QWidget(parent),
     ui(new Ui::EyeModel)
 {   
     QLabel *background = new QLabel(this);
-    QPixmap pixmap("qrc:/halfeyeimage2.png");
+    QPixmap pixmap(":/halfeyeimage2.png");
     background->setPixmap(pixmap);
     background->setScaledContents(true); 
     background->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
