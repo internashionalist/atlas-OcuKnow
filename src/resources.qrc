@@ -6,9 +6,5 @@
         <file alias="vibin_chosic.ogg">assets/vibin_chosic.ogg</file>
         <file alias="questions.txt">assets/questions.txt</file>
     </qresource>
-
-    <qresource prefix="/assets">
-        <file>halfeyeimage2.png</file>
-    </qresource>
-
+    <qresource prefix="/assets"/>
 </RCC>
