@@ -78,8 +78,10 @@ OcuKnow_autogen/timestamp: CMakeFiles/OcuKnow.dir/compiler_depend.ts
 
 OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /root/OcuKnow/src/resources.qrc
 OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/OcuKnow_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
+OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /root/OcuKnow/src/assets/Vibin-chosic\ favorite.mp3
 OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /root/OcuKnow/src/questions.txt
-OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /root/OcuKnow/src/graphics/ocuknow_intro.gif
+OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /root/OcuKnow/src/assets/ocuknow_intro.gif
+OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /root/OcuKnow/src/assets/Meydan-Away\ Background.mp3
 OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /usr/lib/qt6/libexec/rcc
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/root/OcuKnow/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for resources.qrc"
 	/usr/bin/cmake -E cmake_autorcc /root/OcuKnow/src/build/CMakeFiles/OcuKnow_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json 
