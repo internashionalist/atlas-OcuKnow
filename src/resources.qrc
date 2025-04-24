@@ -1,16 +1,14 @@
 <RCC>
     <qresource prefix="/">
-        <file alias="splash.gif">graphics/ocuknow_intro.gif</file>
+        <file alias="splash.gif">assets/ocuknow_intro.gif</file>
         <file>questions.txt</file>
     </qresource>
-</RCC>
-<RCC>
-    <qresource prefix="/sounds">
-        <file>Vibin-chosic favorite.mp3</file>
+
+    <qresource prefix="/">
+        <file alias="vibin.mp3">assets/Vibin-chosic favorite.mp3</file>
     </qresource>
-</RCC>
-<RCC>
-    <qresource prefix="/sounds">
-        <file>Meydan-Away Background.mp3</file>
+
+    <qresource prefix="/">
+        <file alias="meydan.mp3">assets/Meydan-Away Background.mp3</file>
     </qresource>
 </RCC>

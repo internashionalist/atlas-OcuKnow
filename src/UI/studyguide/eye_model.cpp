@@ -9,7 +9,7 @@
 #include <QMediaPlaylist>
 
 
-QPixmap pixmap(":/assets/halfeyeimage.jpg");
+QPixmap pixmap(":assets/halfeyeimage.jpg");
 ui->label->setPixmap(pixmap);
 
 if (pixmap.isNull())
