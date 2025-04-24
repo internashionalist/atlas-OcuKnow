@@ -22,10 +22,12 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Multimedia)
 # Set project sources
 set(PROJECT_SOURCES
     main.cpp
-    logic/quiz.cpp
-    logic/quiz.h
-    UI/introwidget.cpp
-    UI/introwidget.h
+    UI/quiz/quiz.cpp
+    UI/quiz/quiz.h
+    UI/intro/introwidget.cpp
+    UI/intro/introwidget.h
+    UI/credits/creditswidget.cpp
+    UI/credits/creditswidget.h
     resources.qrc
 )
 

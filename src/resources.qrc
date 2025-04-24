@@ -4,3 +4,13 @@
         <file>questions.txt</file>
     </qresource>
 </RCC>
+<RCC>
+    <qresource prefix="/sounds">
+        <file>Vibin-chosic favorite.mp3</file>
+    </qresource>
+</RCC>
+<RCC>
+    <qresource prefix="/sounds">
+        <file>Meydan-Away Background.mp3</file>
+    </qresource>
+</RCC>
