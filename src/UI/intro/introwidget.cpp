@@ -4,6 +4,12 @@
 #include <QVBoxLayout>
 #include <QStackedLayout>
 #include <QMediaPlayer>
+#include <QAudioOutput>
+#include <QMediaDevices>
+#include <QAudioFormat>
+#include <QAudioDevice>
+#include <QSoundEffect>
+#include <QtGlobal>
 
 IntroWidget::IntroWidget(QWidget *parent) : QWidget(parent)
 {
@@ -24,11 +30,56 @@ IntroWidget::IntroWidget(QWidget *parent) : QWidget(parent)
 	background->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 	stack->addWidget(background);
 
-	/* set up the background music */
-	QMediaPlayer *player = new QMediaPlayer(this);
-	player->setSource(QUrl("qrc:/meydan_away.ogg"));
-	player->setLoops(QMediaPlayer::Infinite);
-	player->play();
+    /* set up the background music */
+    // QSoundEffect *effect = new QSoundEffect(this);
+    // effect->setSource(QUrl("qrc:/meydan_away_wav.wav"));
+    // effect->setLoopCount(QSoundEffect::Infinite);
+    // effect->setVolume(1.0);
+    // effect->play();
+
+    /* loads but prefers .wav */
+    QSoundEffect *effect = new QSoundEffect(this);
+    // effect->setSource(QUrl("qrc:/meydan_away_wav.wav"));  // Note: Convert your OGG to WAV first
+    effect->setSource(QUrl::fromLocalFile("C:/Users/snewb/OneDrive/Documents/GitHub/OcuKnow/src/assets/meydan_away_wav.wav"));
+    effect->setLoopCount(QSoundEffect::Infinite);
+    effect->setVolume(0.25);
+    effect->play();
+
+    // Connect to status signal to check if it's working
+    connect(effect, &QSoundEffect::statusChanged, [=]() {
+        qDebug() << "Sound effect status:" << effect->status();
+    });
+
+    qDebug() << "Qt version:" << QT_VERSION_STR;
+
+    /* Loads but no audio */
+    // QMediaPlayer *player = new QMediaPlayer(this);
+    // QAudioOutput *audioOutput = new QAudioOutput(this);
+    // player->setAudioOutput(audioOutput);
+    // audioOutput->setVolume(1.0);
+
+    // // Connect to error signals
+    // connect(player, &QMediaPlayer::errorOccurred,
+    //         [=](QMediaPlayer::Error error, const QString &errorString) {
+    //             qDebug() << "Media player error:" << error << errorString;
+    //         });
+
+    // // Monitor playback state changes
+    // connect(player, &QMediaPlayer::playbackStateChanged,
+    //         [=](QMediaPlayer::PlaybackState state) {
+    //             qDebug() << "Playback state changed to:" << state;
+    //         });
+
+    // // Monitor media status
+    // connect(player, &QMediaPlayer::mediaStatusChanged,
+    //         [=](QMediaPlayer::MediaStatus status) {
+    //             qDebug() << "Media status changed to:" << status;
+    //         });
+
+    // player->setSource(QUrl("qrc:/meydan_away.ogg"));
+    // player->setLoops(QMediaPlayer::Infinite);
+    // player->play();
+
 
 	/* overlay widget for buttons */
 	QWidget *overlay = new QWidget(this);
