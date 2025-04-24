@@ -19,10 +19,18 @@ public:
     explicit EyeModel(QWidget *parent = nullptr);
     ~EyeModel();
 
+signals:
+	void takeQuizClicked();
+	void creditsClicked();
+	void returnToIntro();
+
 private slots:
-    void insertBoldText();
-    void insertItalicText();
-    void insertUnderlinedText();
+	void handleTakeQuiz();
+	void handleCredits();
+
+private:
+	QPushButton *takeQuizButton;
+	QPushButton *creditsButton;
 
 };
 
