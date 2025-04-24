@@ -3,7 +3,7 @@
 #include "UI/credits/creditswidget.h"
 #include "UI/intro/introwidget.h"
 #include "UI/quiz/quiz.h"
-#include "ui_eyemodel.h"
+#include "UI/studyguide/ui_eye_model.h"
 
 int main(int argc, char *argv[])
 {

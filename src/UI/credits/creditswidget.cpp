@@ -10,6 +10,8 @@ CreditsWidget::CreditsWidget(QWidget *parent) : QWidget(parent)
 {
 	setWindowTitle("Credits");
 	setStyleSheet("background-color: white; color: #4FA3E3; font-family: 'Orbitron', sans-serif; font-size: 16px;");
+	setMinimumSize(1200, 800);
+	setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
 	QVBoxLayout *layout = new QVBoxLayout(this);
 	QLabel *title = new QLabel("OcuKnow - Credits", this);
@@ -48,4 +50,6 @@ CreditsWidget::CreditsWidget(QWidget *parent) : QWidget(parent)
 
 	layout->addWidget(body);
 	layout->addWidget(returnButton, 0, Qt::AlignCenter);
+
+	setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
 }
