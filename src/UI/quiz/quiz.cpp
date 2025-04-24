@@ -24,7 +24,7 @@ QVector<Question> Quiz::loadQuestions()
     QVector<Question> questions;
     Question newQuestion;
 
-    QFile file(":/questions.txt");
+    QFile file(":/UI/quiz/questions.txt");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         qDebug() << "Failed to open questions.txt";
         return questions;
@@ -264,11 +264,12 @@ void Quiz::runQuiz() {
 
     quizPages->setCurrentWidget(quizSplashPage);
 
-    QVBoxLayout *mainLayout = new QVBoxLayout;
-    mainLayout->addWidget(quizPages);
-    QWidget *centralWidget = new QWidget(this);
-    centralWidget->setLayout(mainLayout);
-    setCentralWidget(centralWidget);
+    // QVBoxLayout *mainLayout = new QVBoxLayout;
+    // mainLayout->addWidget(quizPages);
+    // QWidget *centralWidget = new QWidget(this);
+    // centralWidget->setLayout(mainLayout);
+    // setCentralWidget(centralWidget);
+    setCentralWidget(quizPages);
 
 	connect(splashPageStartButton, &QPushButton::clicked, this, &Quiz::onStartButtonClicked);
 }
