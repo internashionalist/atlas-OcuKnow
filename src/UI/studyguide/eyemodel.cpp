@@ -154,7 +154,10 @@ It is flexible and can change shape to focus on objects at different distances.<
 	}
 }
 
-
+EyeModel::~EyeModel()
+{
+    delete ui;
+}
 	// Prob don't need this
 
 	// QToolButton *toolButton = new QToolButton(this);
