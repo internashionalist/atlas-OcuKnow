@@ -1,5 +1,6 @@
 #include <QApplication>
 #include <QDialog>
+#include <QWidget>
 #include "UI/credits/creditswidget.h"
 #include "UI/intro/introwidget.h"
 #include "UI/quiz/quiz.h"
