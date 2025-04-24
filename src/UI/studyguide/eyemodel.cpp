@@ -9,25 +9,35 @@
 #include <QAudioOutput>
 #include <QApplication>
 #include <QDialog>
-#include "eye_model.h"
-#include "ui_eye_model.h"
+// <<<<<<< Ariel
+// #include "eye_model.h"
+// #include "ui_eye_model.h"
 
-EyeModel::EyeModel(QWidget *parent) : QWidget(parent),
-    ui(new Ui::EyeModel)
-{   
-    QLabel *background = new QLabel(this);
-    QPixmap pixmap(":/halfeyeimage2.png");
-    background->setPixmap(pixmap);
-    background->setScaledContents(true); 
-    background->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
-    stack->addWidget(background);
+// EyeModel::EyeModel(QWidget *parent) : QWidget(parent),
+//     ui(new Ui::EyeModel)
+// {   
+//     QLabel *background = new QLabel(this);
+//     QPixmap pixmap(":/halfeyeimage2.png");
+//     background->setPixmap(pixmap);
+//     background->setScaledContents(true); 
+//     background->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+//     stack->addWidget(background);
 
-    ui->setupUi(this);
+//     ui->setupUi(this);
+// =======
+#include <QFileInfo>
+#include "eyemodel.h"
+#include "ui_eyemodel.h"
+
+EyeModel::EyeModel(QWidget *parent)
+	: QDialog(parent), ui = new Ui::EyeModel;
+{
+	ui->setupUi(this);
     // QPixmap pixmap("C:/Users/Alexa/OneDrive/Desktop/Eye Project/OcuKnow/src/assets/halfeyeimage2.png");
 
-    // QPixmap pixmap(":/assets/halfeyeimage2.png");
-    // qDebug() << "Image exists:" << QFileInfo(":/assets/halfeyeimage2.png").exists();
-    // ui->label->setPixmap(pixmap.scaled(ui->label->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
+    QPixmap pixmap(":/assets/halfeyeimage2.png");
+    qDebug() << "Image exists:" << QFileInfo(":/assets/halfeyeimage2.png").exists();
+    ui->label->setPixmap(pixmap.scaled(ui->label->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
 
     // ui->label->setPixmap(pixmap.scaled(ui->label->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
     // ui->label->setPixmap(image);
@@ -125,16 +135,14 @@ It is flexible and can change shape to focus on objects at different distances.<
 <li>Vitreous humor is a clear gel-like substance that fills the space between the lens and retina.\nIt helps maintain the shape of the eye and provides support to the retina.</li>
 </ul>)DELIM");
 
-    ui->Optic Disk->setToolTip("Optic Disk"
-"<ul>"
-"<li>papill/o - optic disk</li>"
-"<li>Known as the blind spot, located on the retina. Visible point where the optic nerve leaves the eyeball and where retinal blood vessels enter and leave.</li>"
-"<ul>")
+    ui->OpticDisk->setToolTip(R"DELIM(Optic Disk
+<ul>
+<li>papill/o - optic disk</li>
+<li>Known as the blind spot, located on the retina. Visible point where the optic nerve leaves the eyeball and where retinal blood vessels enter and leave.</li>
+</ul>)DELIM");
     
     ui->OpticNerve->setToolTip(R"DELIM(Optic Nerve)DELIM");
-
 }
-
 
 // Prob don't need this
 

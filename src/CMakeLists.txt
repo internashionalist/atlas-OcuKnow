@@ -28,9 +28,9 @@ set(PROJECT_SOURCES
     UI/intro/introwidget.h
     UI/credits/creditswidget.cpp
     UI/credits/creditswidget.h
-    UI/studyguide/eye_model.cpp
-    UI/studyguide/eye_model.h
-	UI/studyguide/eye_model.ui
+    UI/studyguide/eyemodel.cpp
+    UI/studyguide/eyemodel.h
+	UI/studyguide/eyemodel.ui
     resources.qrc
 )
 
