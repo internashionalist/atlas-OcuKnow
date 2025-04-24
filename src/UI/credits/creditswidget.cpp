@@ -41,12 +41,10 @@ CreditsWidget::CreditsWidget(QWidget *parent) : QWidget(parent)
 		color: white;
 	}
 )");
-	connect(returnButton, &QPushButton::clicked, this, [this]() {
-    this->close();
-    IntroWidget *intro = new IntroWidget();
-    intro->setAttribute(Qt::WA_DeleteOnClose);
-    intro->show();
-	});
+	connect(returnButton, &QPushButton::clicked, this, [this]()
+			{
+    emit returnToIntro();
+    this->close(); });
 
 	layout->addWidget(body);
 	layout->addWidget(returnButton, 0, Qt::AlignCenter);

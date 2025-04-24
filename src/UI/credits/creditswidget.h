@@ -9,6 +9,9 @@ class CreditsWidget : public QWidget
 
 public:
 	explicit CreditsWidget(QWidget *parent = nullptr);
+
+signals:
+	void returnToIntro();
 };
 
 #endif // CREDITSWIDGET_H
