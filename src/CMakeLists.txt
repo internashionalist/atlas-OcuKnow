@@ -16,7 +16,7 @@ set(CMAKE_AUTOMOC ON) # Enable automatic moc processing
 set(CMAKE_AUTORCC ON) # Enable automatic resource processing
 
 # Find Qt (try both Qt6 and Qt5)
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Multimedia)
+find_package(QT NAMES Qt6 REQUIRED COMPONENTS Widgets Multimedia)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Multimedia)
 
 # Set project sources
