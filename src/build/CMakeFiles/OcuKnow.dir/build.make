@@ -78,6 +78,7 @@ OcuKnow_autogen/timestamp: CMakeFiles/OcuKnow.dir/compiler_depend.ts
 
 OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /root/OcuKnow/src/resources.qrc
 OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/OcuKnow_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
+OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /root/OcuKnow/src/assets/meydan_away2.ogg
 OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /root/OcuKnow/src/assets/questions.txt
 OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /root/OcuKnow/src/assets/ocuknow_intro.gif
 OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp: /root/OcuKnow/src/assets/vibin_chosic.ogg
