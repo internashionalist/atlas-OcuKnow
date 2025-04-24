@@ -3,6 +3,7 @@
 #include <QMovie>
 #include <QVBoxLayout>
 #include <QStackedLayout>
+#include <QMediaPlayer>
 
 IntroWidget::IntroWidget(QWidget *parent) : QWidget(parent)
 {
@@ -22,6 +23,12 @@ IntroWidget::IntroWidget(QWidget *parent) : QWidget(parent)
 	background->setScaledContents(true);
 	background->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 	stack->addWidget(background);
+
+	/* set up the background music */
+	QMediaPlayer *player = new QMediaPlayer(this);
+	player->setSource(QUrl("qrc:/meydan_away.ogg"));
+	player->setLoops(QMediaPlayer::Infinite);
+	player->play();
 
 	/* overlay widget for buttons */
 	QWidget *overlay = new QWidget(this);
