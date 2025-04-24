@@ -6,6 +6,9 @@
 #include <QLabel>
 #include <QVBoxLayout>
 #include <QMovie>
+#include <QVBoxLayout>
+#include <QStackedLayout>
+#include <QSoundEffect>
 
 class IntroWidget : public QWidget
 {
