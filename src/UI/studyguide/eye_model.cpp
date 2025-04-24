@@ -16,14 +16,17 @@ Eye_model::Eye_model(QWidget *parent) : QWidget(parent),
     ui(new Ui::Eye_model)
 {
     QPixmap pixmap("/halfeyeimage2.png");
+    ui->label->setPixmap(pixmap.scaled(ui->label->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
+    ui->label->setPixmap(scaledPixmap);
     // QPixmap pixmap("C:\Users\Alexa\OneDrive\Desktop\Eye Project\OcuKnow\src\assets");
-    ui->label->setPixmap(pixmap);
+    // ui->label->setPixmap(pixmap);
 
     if (pixmap.isNull())
     {
         qDebug() << "Error";
     } else {
-        ui->label->setPixmap(pixmap);
+        ui->label->setPixmap(pixmap.scaled(ui->label->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
+        ui->label->setPixmap(scaledPixmap);
     	qDebug() << "Success";
     }
 
