@@ -15,7 +15,7 @@
 Eye_model::Eye_model(QWidget *parent) : QWidget(parent),
     ui(new Ui::Eye_model)
 {
-    QPixmap pixmap("/halfeyeimage.jpg");
+    QPixmap pixmap("/halfeyeimage2.png");
     // QPixmap pixmap("C:\Users\Alexa\OneDrive\Desktop\Eye Project\OcuKnow\src\assets");
     ui->label->setPixmap(pixmap);
 
