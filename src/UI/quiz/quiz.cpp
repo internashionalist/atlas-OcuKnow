@@ -168,7 +168,7 @@ QWidget* Quiz::buildQuizScorePage()
 	}
 	else if (percentScore >= 80)
 	{
-		colorTextGradeQuip += "B.\nCongratulations! You are now an Opthamologist Fellowship ready to hold the sweat sponge in surgery!";
+        colorTextGradeQuip += "B.\nCongratulations! You are now an Opthamologist in Fellowship ready to hold the sweat sponge in surgery!";
 	}
 	else if (percentScore >= 70)
 	{
