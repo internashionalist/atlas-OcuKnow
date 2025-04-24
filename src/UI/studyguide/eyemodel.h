@@ -9,10 +9,9 @@
 #include <QAction>
 #include <QVBoxLayout>
 #include <QMediaPlayer>
-#include <QMediaPlaylist>
+#include <QAudioOutput>
 
-
-class EyeModel : public QWindow
+class EyeModel : public QDialog
 {
     Q_OBJECT
 public:
@@ -29,6 +28,7 @@ private slots:
 	void handleCredits();
 
 private:
+	Ui::EyeModel *ui;
 	QPushButton *takeQuizButton;
 	QPushButton *creditsButton;
 
