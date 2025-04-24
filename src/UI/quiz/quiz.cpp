@@ -1,5 +1,8 @@
 #include "quiz.h"
 
+// Define your periwinkle blue color
+const QString periwinkle = "#CCCCFF";
+
 QFont headerFont("Orbitron", 24, QFont::Bold);
 QFont questionFont("Orbitron", 18, QFont::Normal);
 QFont textFont("Orbitron", 14, QFont::Normal);
@@ -49,34 +52,37 @@ QVector<Question> Quiz::loadQuestions()
 QWidget* Quiz::buildQuizSplashPage()
 {
     QWidget *quizSplashPage = new QWidget;
+    quizSplashPage->setStyleSheet("background-color: " + periwinkle + ";");
 
     QLabel *splashPageHeader = new QLabel("Eye Quizlette");
-	QLabel *splashPageInstruction = new QLabel("Over the next 100 pages you will be asked to answer multiple questions on the eye.\nClick 'Start' to begin!\n");
-	splashPageStartButton = new QPushButton("Start");
+    QLabel *splashPageInstruction = new QLabel("Over the next 100 pages you will be asked to answer multiple questions on the eye.\nClick 'Start' to begin!\n");
+    splashPageStartButton = new QPushButton("Start");
 
-	splashPageHeader->setAlignment(Qt::AlignCenter);
+    splashPageHeader->setAlignment(Qt::AlignCenter);
     splashPageHeader->setFont(headerFont);
     splashPageInstruction->setWordWrap(true);
     splashPageInstruction->setFont(textFont);
     splashPageInstruction->setAlignment(Qt::AlignCenter);
-	splashPageStartButton->setFont(textFont);
-	splashPageStartButton->setStyleSheet(buttonStyle);
-	splashPageStartButton->setMaximumSize(QSize(300, 75));
-	splashPageStartButton->setDefault(true);
+    splashPageStartButton->setFont(textFont);
+    splashPageStartButton->setStyleSheet(buttonStyle);
+    splashPageStartButton->setMaximumSize(QSize(300, 75));
+    splashPageStartButton->setDefault(true);
 
-	QVBoxLayout *splashLayout = new QVBoxLayout(quizSplashPage);
+    QVBoxLayout *splashLayout = new QVBoxLayout(quizSplashPage);
     splashLayout->addStretch();
     splashLayout->addWidget(splashPageHeader);
     splashLayout->addWidget(splashPageInstruction);
-	splashLayout->addWidget(splashPageStartButton);
-	splashLayout->setAlignment(splashPageStartButton, Qt::AlignCenter);
-	splashLayout->addStretch();
+    splashLayout->addWidget(splashPageStartButton);
+    splashLayout->setAlignment(splashPageStartButton, Qt::AlignCenter);
+    splashLayout->addStretch();
 
     return quizSplashPage;
 }
 
 QWidget* Quiz::buildQuizQuestionPage(const Question& question, int questionIndex, Quiz* quizWindow) {
     QWidget *page = new QWidget;
+    page->setStyleSheet("background-color: " + periwinkle + ";");
+
     QVBoxLayout *mainLayout = new QVBoxLayout(page);
 
     QLabel *header = new QLabel("Question " + QString::number(questionIndex + 1));
@@ -149,84 +155,64 @@ QWidget* Quiz::buildQuizQuestionPage(const Question& question, int questionIndex
 QWidget* Quiz::buildQuizScorePage()
 {
     QWidget *scorePage = new QWidget;
+    scorePage->setStyleSheet("background-color: " + periwinkle + ";");
+
     QVBoxLayout *layout = new QVBoxLayout(scorePage);
     QLabel *header = new QLabel("Quiz Final Score");
     QLabel *scoreText = new QLabel();
-	QLabel *colorText = new QLabel("That earned you a grade of ");
-	QString colorTextGradeQuip = colorText->text();
-	QPushButton *restartButton = new QPushButton("Restart Quiz");
-	int percentScore = static_cast<int>(std::round((double)score / (double)numQuestions * 100.0));
-	// QString *letterGrade = new QString();
+    QLabel *colorText = new QLabel("That earned you a grade of ");
+    QString colorTextGradeQuip = colorText->text();
+    QPushButton *restartButton = new QPushButton("Restart Quiz");
+    int percentScore = static_cast<int>(std::round((double)score / (double)numQuestions * 100.0));
 
-	if (percentScore == 100)
-	{
-		colorTextGradeQuip += "A+.\nCongratulations! You are now an Opthalmologist Attending ready to conduct eye transplants!";
-	}
-	else if (percentScore >= 90)
-	{
-		colorTextGradeQuip += "A.\nCongratulations! You are now an Opthamologist Resident ready significantly participate in surgery!";
-	}
-	else if (percentScore >= 80)
-	{
+    if (percentScore == 100) {
+        colorTextGradeQuip += "A+.\nCongratulations! You are now an Opthalmologist Attending ready to conduct eye transplants!";
+    } else if (percentScore >= 90) {
+        colorTextGradeQuip += "A.\nCongratulations! You are now an Opthamologist Resident ready significantly participate in surgery!";
+    } else if (percentScore >= 80) {
         colorTextGradeQuip += "B.\nCongratulations! You are now an Opthamologist in Fellowship ready to hold the sweat sponge in surgery!";
-	}
-	else if (percentScore >= 70)
-	{
-		colorTextGradeQuip += "C.\nCongratulations! You are now an Opthamologist Intern ready to watch surgery from the observation room!";
-	}
-	else if (percentScore >= 60)
-	{
-		colorTextGradeQuip += "D.\nCongratulations! You graduated without prospects, but 'D' is for Diploma!";
-	}
-	else if (percentScore >= 50)
-	{
-		colorTextGradeQuip += "F.\nCongratulations! You get to retake your senior year!";
-	}
-	else if (percentScore >= 40)
-	{
-		colorTextGradeQuip += "F-.\nCongratulations! You get to retake all of medical school!";
-	}
-	else if (percentScore >= 30)
-	{
-		colorTextGradeQuip += "F--.\nCongratulations! You get to explore other medical schools!";
-	}
-	else if (percentScore >= 20)
-	{
-		colorTextGradeQuip += "F---.\nCongratulations! You get to explore other career options!";
-	}
-	else if (percentScore >= 10)
-	{
-		colorTextGradeQuip += "F----.\nCongratulations! You get to explore the career of junior high science teacher!";
-	}
-	else if (percentScore >= 0)
-	{
-		colorTextGradeQuip += "Zero.\nCongratulations! You get to explore the career of Gym Teacher!";
-	}
+    } else if (percentScore >= 70) {
+        colorTextGradeQuip += "C.\nCongratulations! You are now an Opthamologist Intern ready to watch surgery from the observation room!";
+    } else if (percentScore >= 60) {
+        colorTextGradeQuip += "D.\nCongratulations! You graduated without prospects, but 'D' is for Diploma!";
+    } else if (percentScore >= 50) {
+        colorTextGradeQuip += "F.\nCongratulations! You get to retake your senior year!";
+    } else if (percentScore >= 40) {
+        colorTextGradeQuip += "F-.\nCongratulations! You get to retake all of medical school!";
+    } else if (percentScore >= 30) {
+        colorTextGradeQuip += "F--.\nCongratulations! You get to explore other medical schools!";
+    } else if (percentScore >= 20) {
+        colorTextGradeQuip += "F---.\nCongratulations! You get to explore other career options!";
+    } else if (percentScore >= 10) {
+        colorTextGradeQuip += "F----.\nCongratulations! You get to explore the career of junior high science teacher!";
+    } else {
+        colorTextGradeQuip += "Zero.\nCongratulations! You get to explore the career of Gym Teacher!";
+    }
 
-	colorText->setText(colorTextGradeQuip);
+    colorText->setText(colorTextGradeQuip);
 
-	layout->addWidget(header);
+    layout->addWidget(header);
     layout->addWidget(scoreText);
-	layout->addWidget(colorText);
-	layout->addWidget(restartButton);
-	layout->setAlignment(restartButton, Qt::AlignCenter);
+    layout->addWidget(colorText);
+    layout->addWidget(restartButton);
+    layout->setAlignment(restartButton, Qt::AlignCenter);
 
-	scoreText->setText(QString("You successfully answered %1 out of %2. That's a %3%.").arg(score).arg(numQuestions).arg(percentScore));
-	header->setAlignment(Qt::AlignCenter);
+    scoreText->setText(QString("You successfully answered %1 out of %2. That's a %3%.").arg(score).arg(numQuestions).arg(percentScore));
+    header->setAlignment(Qt::AlignCenter);
     header->setFont(headerFont);
     scoreText->setAlignment(Qt::AlignCenter);
     scoreText->setFont(textFont);
     scoreText->setWordWrap(true);
 
-	colorText->setAlignment(Qt::AlignCenter);
-	colorText->setFont(textFont);
-	colorText->setWordWrap(true);
+    colorText->setAlignment(Qt::AlignCenter);
+    colorText->setFont(textFont);
+    colorText->setWordWrap(true);
 
-	restartButton->setStyleSheet(buttonStyle);
-	restartButton->setDefault(true);
-	restartButton->setMaximumSize(QSize(300, 75));
+    restartButton->setStyleSheet(buttonStyle);
+    restartButton->setDefault(true);
+    restartButton->setMaximumSize(QSize(300, 75));
 
-	QObject::connect(restartButton, &QPushButton::clicked, this, &Quiz::runQuiz);
+    QObject::connect(restartButton, &QPushButton::clicked, this, &Quiz::runQuiz);
 
     return scorePage;
 }
@@ -264,14 +250,9 @@ void Quiz::runQuiz() {
 
     quizPages->setCurrentWidget(quizSplashPage);
 
-    // QVBoxLayout *mainLayout = new QVBoxLayout;
-    // mainLayout->addWidget(quizPages);
-    // QWidget *centralWidget = new QWidget(this);
-    // centralWidget->setLayout(mainLayout);
-    // setCentralWidget(centralWidget);
     setCentralWidget(quizPages);
 
-	connect(splashPageStartButton, &QPushButton::clicked, this, &Quiz::onStartButtonClicked);
+    connect(splashPageStartButton, &QPushButton::clicked, this, &Quiz::onStartButtonClicked);
 }
 
 Quiz::Quiz(QWidget *parent) : QMainWindow(parent) {
