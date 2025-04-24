@@ -9,7 +9,7 @@
 #include <QAction>
 #include <QVBoxLayout>
 #include <QMediaPlayer>
-#include <QMediaPlaylist>
+#include <QWindow>
 
 
 class Eye_model : public QWindow
