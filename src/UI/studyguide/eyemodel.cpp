@@ -9,6 +9,22 @@
 #include <QAudioOutput>
 #include <QApplication>
 #include <QDialog>
+// <<<<<<< Ariel
+// #include "eye_model.h"
+// #include "ui_eye_model.h"
+
+// EyeModel::EyeModel(QWidget *parent) : QWidget(parent),
+//     ui(new Ui::EyeModel)
+// {   
+//     QLabel *background = new QLabel(this);
+//     QPixmap pixmap(":/halfeyeimage2.png");
+//     background->setPixmap(pixmap);
+//     background->setScaledContents(true); 
+//     background->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+//     stack->addWidget(background);
+
+//     ui->setupUi(this);
+// =======
 #include <QFileInfo>
 #include "eyemodel.h"
 #include "ui_eyemodel.h"
