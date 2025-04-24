@@ -157,19 +157,19 @@ CMakeFiles/OcuKnow.dir/UI/credits/creditswidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OcuKnow.dir/UI/credits/creditswidget.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/OcuKnow/src/UI/credits/creditswidget.cpp -o CMakeFiles/OcuKnow.dir/UI/credits/creditswidget.cpp.s
 
-CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o: CMakeFiles/OcuKnow.dir/flags.make
-CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o: /root/OcuKnow/src/UI/studyguide/eye_model.cpp
-CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o: CMakeFiles/OcuKnow.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/OcuKnow/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o -MF CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o.d -o CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o -c /root/OcuKnow/src/UI/studyguide/eye_model.cpp
+CMakeFiles/OcuKnow.dir/UI/studyguide/eyemodel.cpp.o: CMakeFiles/OcuKnow.dir/flags.make
+CMakeFiles/OcuKnow.dir/UI/studyguide/eyemodel.cpp.o: /root/OcuKnow/src/UI/studyguide/eyemodel.cpp
+CMakeFiles/OcuKnow.dir/UI/studyguide/eyemodel.cpp.o: CMakeFiles/OcuKnow.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/root/OcuKnow/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OcuKnow.dir/UI/studyguide/eyemodel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OcuKnow.dir/UI/studyguide/eyemodel.cpp.o -MF CMakeFiles/OcuKnow.dir/UI/studyguide/eyemodel.cpp.o.d -o CMakeFiles/OcuKnow.dir/UI/studyguide/eyemodel.cpp.o -c /root/OcuKnow/src/UI/studyguide/eyemodel.cpp
 
-CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/OcuKnow/src/UI/studyguide/eye_model.cpp > CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.i
+CMakeFiles/OcuKnow.dir/UI/studyguide/eyemodel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OcuKnow.dir/UI/studyguide/eyemodel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/OcuKnow/src/UI/studyguide/eyemodel.cpp > CMakeFiles/OcuKnow.dir/UI/studyguide/eyemodel.cpp.i
 
-CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/OcuKnow/src/UI/studyguide/eye_model.cpp -o CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.s
+CMakeFiles/OcuKnow.dir/UI/studyguide/eyemodel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OcuKnow.dir/UI/studyguide/eyemodel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/OcuKnow/src/UI/studyguide/eyemodel.cpp -o CMakeFiles/OcuKnow.dir/UI/studyguide/eyemodel.cpp.s
 
 CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/OcuKnow.dir/flags.make
 CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o: OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp
@@ -192,7 +192,7 @@ OcuKnow_OBJECTS = \
 "CMakeFiles/OcuKnow.dir/UI/quiz/quiz.cpp.o" \
 "CMakeFiles/OcuKnow.dir/UI/intro/introwidget.cpp.o" \
 "CMakeFiles/OcuKnow.dir/UI/credits/creditswidget.cpp.o" \
-"CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o" \
+"CMakeFiles/OcuKnow.dir/UI/studyguide/eyemodel.cpp.o" \
 "CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o"
 
 # External object files for target OcuKnow
@@ -203,7 +203,7 @@ OcuKnow: CMakeFiles/OcuKnow.dir/main.cpp.o
 OcuKnow: CMakeFiles/OcuKnow.dir/UI/quiz/quiz.cpp.o
 OcuKnow: CMakeFiles/OcuKnow.dir/UI/intro/introwidget.cpp.o
 OcuKnow: CMakeFiles/OcuKnow.dir/UI/credits/creditswidget.cpp.o
-OcuKnow: CMakeFiles/OcuKnow.dir/UI/studyguide/eye_model.cpp.o
+OcuKnow: CMakeFiles/OcuKnow.dir/UI/studyguide/eyemodel.cpp.o
 OcuKnow: CMakeFiles/OcuKnow.dir/OcuKnow_autogen/EWIEGA46WW/qrc_resources.cpp.o
 OcuKnow: CMakeFiles/OcuKnow.dir/build.make
 OcuKnow: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2

@@ -4,6 +4,7 @@
 #include "UI/intro/introwidget.h"
 #include "UI/quiz/quiz.h"
 #include "UI/studyguide/ui_eyemodel.h"
+#include "UI/studyguide/eyemodel.h"
 
 int main(int argc, char *argv[])
 {
@@ -22,9 +23,7 @@ int main(int argc, char *argv[])
     });
 
     QObject::connect(&intro, &IntroWidget::enterStudyGuideClicked, [&]() {
-        QDialog *studyGuide = new QDialog();
-        Ui::Dialog *ui = new Ui::Dialog();
-        ui->setupUi(studyGuide);
+        EyeModel *studyGuide = new EyeModel();
         studyGuide->setWindowTitle("Study Guide");
         studyGuide->setAttribute(Qt::WA_DeleteOnClose);
         studyGuide->show();
