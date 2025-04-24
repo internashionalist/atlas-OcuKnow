@@ -1,19 +1,10 @@
 #ifndef EYE_MODEL_H
 #define EYE_MODEL_H
 
-#include <QPixmap>
-#include <QLabel>
-#include <QDebug>
-#include <QToolButton>
-#include <QMenu>
-#include <QAction>
-#include <QVBoxLayout>
-#include <QMediaPlayer>
-#include <QWidget>
-
+#include <QDialog>
 #include "ui_eye_model.h"
 
-class Eye_model : public QWidget
+class Eye_model : public QDialog
 {
 	Q_OBJECT
 
@@ -22,12 +13,11 @@ public:
 	~Eye_model();
 
 private:
-	Ui::Eye_model *ui;
-
+	Ui::Dialog *ui;
 private slots:
 	void insertBoldText();
 	void insertItalicText();
 	void insertUnderlinedText();
 };
 
-#endif
+#endif /* EYE_MODEL_H */
