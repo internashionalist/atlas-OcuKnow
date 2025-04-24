@@ -42,8 +42,8 @@ EyeModel::EyeModel(QWidget *parent)
 		// QPixmap pixmap("C:/Users/Alexa/OneDrive/Desktop/Eye Project/OcuKnow/src/assets/halfeyeimage2.png");
 
 		QLabel *ImageEye = new QLabel(this);
-		QPixmap pixmap(":/assets/halfeyeimage2.png");
-		qDebug() << "Image exists:" << QFileInfo(":/assets/halfeyeimage2.png").exists();
+		QPixmap pixmap("qrc:/assets/halfeyeimage2.png");
+		qDebug() << "Image exists:" << QFileInfo("qrc:/assets/halfeyeimage2.png").exists();
 		ui->ImageEye->setPixmap(pixmap.scaled(ui->ImageEye->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
 
 		// ui->label->setPixmap(pixmap.scaled(ui->label->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
