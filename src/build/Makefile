@@ -248,53 +248,77 @@ OcuKnow_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/OcuKnow_autogen/mocs_compilation.cpp.s
 .PHONY : OcuKnow_autogen/mocs_compilation.cpp.s
 
-UI/introwidget.o: UI/introwidget.cpp.o
-.PHONY : UI/introwidget.o
+UI/credits/creditswidget.o: UI/credits/creditswidget.cpp.o
+.PHONY : UI/credits/creditswidget.o
 
 # target to build an object file
-UI/introwidget.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/introwidget.cpp.o
-.PHONY : UI/introwidget.cpp.o
+UI/credits/creditswidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/credits/creditswidget.cpp.o
+.PHONY : UI/credits/creditswidget.cpp.o
 
-UI/introwidget.i: UI/introwidget.cpp.i
-.PHONY : UI/introwidget.i
+UI/credits/creditswidget.i: UI/credits/creditswidget.cpp.i
+.PHONY : UI/credits/creditswidget.i
 
 # target to preprocess a source file
-UI/introwidget.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/introwidget.cpp.i
-.PHONY : UI/introwidget.cpp.i
+UI/credits/creditswidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/credits/creditswidget.cpp.i
+.PHONY : UI/credits/creditswidget.cpp.i
 
-UI/introwidget.s: UI/introwidget.cpp.s
-.PHONY : UI/introwidget.s
+UI/credits/creditswidget.s: UI/credits/creditswidget.cpp.s
+.PHONY : UI/credits/creditswidget.s
 
 # target to generate assembly for a file
-UI/introwidget.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/introwidget.cpp.s
-.PHONY : UI/introwidget.cpp.s
+UI/credits/creditswidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/credits/creditswidget.cpp.s
+.PHONY : UI/credits/creditswidget.cpp.s
 
-logic/quiz.o: logic/quiz.cpp.o
-.PHONY : logic/quiz.o
+UI/intro/introwidget.o: UI/intro/introwidget.cpp.o
+.PHONY : UI/intro/introwidget.o
 
 # target to build an object file
-logic/quiz.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/logic/quiz.cpp.o
-.PHONY : logic/quiz.cpp.o
+UI/intro/introwidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/intro/introwidget.cpp.o
+.PHONY : UI/intro/introwidget.cpp.o
 
-logic/quiz.i: logic/quiz.cpp.i
-.PHONY : logic/quiz.i
+UI/intro/introwidget.i: UI/intro/introwidget.cpp.i
+.PHONY : UI/intro/introwidget.i
 
 # target to preprocess a source file
-logic/quiz.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/logic/quiz.cpp.i
-.PHONY : logic/quiz.cpp.i
+UI/intro/introwidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/intro/introwidget.cpp.i
+.PHONY : UI/intro/introwidget.cpp.i
 
-logic/quiz.s: logic/quiz.cpp.s
-.PHONY : logic/quiz.s
+UI/intro/introwidget.s: UI/intro/introwidget.cpp.s
+.PHONY : UI/intro/introwidget.s
 
 # target to generate assembly for a file
-logic/quiz.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/logic/quiz.cpp.s
-.PHONY : logic/quiz.cpp.s
+UI/intro/introwidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/intro/introwidget.cpp.s
+.PHONY : UI/intro/introwidget.cpp.s
+
+UI/quiz/quiz.o: UI/quiz/quiz.cpp.o
+.PHONY : UI/quiz/quiz.o
+
+# target to build an object file
+UI/quiz/quiz.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/quiz/quiz.cpp.o
+.PHONY : UI/quiz/quiz.cpp.o
+
+UI/quiz/quiz.i: UI/quiz/quiz.cpp.i
+.PHONY : UI/quiz/quiz.i
+
+# target to preprocess a source file
+UI/quiz/quiz.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/quiz/quiz.cpp.i
+.PHONY : UI/quiz/quiz.cpp.i
+
+UI/quiz/quiz.s: UI/quiz/quiz.cpp.s
+.PHONY : UI/quiz/quiz.s
+
+# target to generate assembly for a file
+UI/quiz/quiz.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OcuKnow.dir/build.make CMakeFiles/OcuKnow.dir/UI/quiz/quiz.cpp.s
+.PHONY : UI/quiz/quiz.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -341,12 +365,15 @@ help:
 	@echo "... OcuKnow_autogen/mocs_compilation.o"
 	@echo "... OcuKnow_autogen/mocs_compilation.i"
 	@echo "... OcuKnow_autogen/mocs_compilation.s"
-	@echo "... UI/introwidget.o"
-	@echo "... UI/introwidget.i"
-	@echo "... UI/introwidget.s"
-	@echo "... logic/quiz.o"
-	@echo "... logic/quiz.i"
-	@echo "... logic/quiz.s"
+	@echo "... UI/credits/creditswidget.o"
+	@echo "... UI/credits/creditswidget.i"
+	@echo "... UI/credits/creditswidget.s"
+	@echo "... UI/intro/introwidget.o"
+	@echo "... UI/intro/introwidget.i"
+	@echo "... UI/intro/introwidget.s"
+	@echo "... UI/quiz/quiz.o"
+	@echo "... UI/quiz/quiz.i"
+	@echo "... UI/quiz/quiz.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
