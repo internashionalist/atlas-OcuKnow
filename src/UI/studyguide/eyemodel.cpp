@@ -41,6 +41,7 @@ EyeModel::EyeModel(QWidget *parent)
     // QPixmap pixmap("C:/Users/Alexa/OneDrive/Desktop/Eye Project/OcuKnow/src/assets/halfeyeimage2.png");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 		QLabel *ImageEye = new QLabel(this);
 		QPixmap pixmap("qrc:/assets/halfeyeimage2.png");
 		qDebug() << "Image exists:" << QFileInfo("qrc:/assets/halfeyeimage2.png").exists();
@@ -50,10 +51,16 @@ EyeModel::EyeModel(QWidget *parent)
     qDebug() << "Image exists:" << QFileInfo(":/assets/halfeyeimage2.png").exists();
     ui->label->setPixmap(pixmap.scaled(ui->label->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
 >>>>>>> parent of b71e307 (get like me)
+=======
+    QPixmap pixmap(":/assets/halfeyeimage2.png");
+    qDebug() << "Image exists:" << QFileInfo(":/assets/halfeyeimage2.png").exists();
+    ui->label->setPixmap(pixmap.scaled(ui->label->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
+>>>>>>> parent of b71e307 (get like me)
 
     // ui->label->setPixmap(pixmap.scaled(ui->label->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
     // ui->label->setPixmap(image);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if (pixmap.isNull())
 		{
@@ -65,6 +72,8 @@ EyeModel::EyeModel(QWidget *parent)
 			qDebug() << "Success";
 		}
 =======
+=======
+>>>>>>> parent of b71e307 (get like me)
     if (pixmap.isNull())
     {
         qDebug() << "Error";
@@ -72,6 +81,9 @@ EyeModel::EyeModel(QWidget *parent)
     	ui->label->setPixmap(pixmap);
     	qDebug() << "Success";
     }
+<<<<<<< HEAD
+>>>>>>> parent of b71e307 (get like me)
+=======
 >>>>>>> parent of b71e307 (get like me)
 
 
@@ -169,16 +181,22 @@ It is flexible and can change shape to focus on objects at different distances.<
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 EyeModel::~EyeModel()
 {
     delete ui;
 }
 	// Prob don't need this
 =======
+=======
+>>>>>>> parent of b71e307 (get like me)
 // Prob don't need this
 
 // QToolButton *toolButton = new QToolButton(this);
 // toolButton->setText("Insert Text");
 // toolButton->setPopupMode(QToolButton::MenuButtonPopup);
+<<<<<<< HEAD
+>>>>>>> parent of b71e307 (get like me)
+=======
 >>>>>>> parent of b71e307 (get like me)
 
