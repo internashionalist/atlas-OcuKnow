@@ -12,6 +12,8 @@
   </property>
   <property name="font">
    <font>
+    <hintingpreference>PreferDefaultHinting</hintingpreference>
+    <fontweight>Medium</fontweight>
    </font>
   </property>
   <property name="focusPolicy">
@@ -60,6 +62,8 @@
    <property name="font">
     <font>
      <family>Orbitron</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -87,6 +91,8 @@
    <property name="font">
     <font>
      <family>Orbitron</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -114,6 +120,8 @@
    <property name="font">
     <font>
      <family>Orbitron</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -142,6 +150,8 @@ Lens</string>
    <property name="font">
     <font>
      <family>Orbitron</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -169,6 +179,8 @@ Lens</string>
    <property name="font">
     <font>
      <family>Orbitron</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -196,6 +208,8 @@ Lens</string>
    <property name="font">
     <font>
      <family>Orbitron</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -223,6 +237,8 @@ Lens</string>
    <property name="font">
     <font>
      <family>Orbitron</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -250,6 +266,8 @@ Lens</string>
    <property name="font">
     <font>
      <family>Orbitron</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -277,6 +295,8 @@ Lens</string>
    <property name="font">
     <font>
      <family>Orbitron</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -326,6 +346,8 @@ Artery and Vein</string>
    <property name="font">
     <font>
      <family>Orbitron</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -354,6 +376,8 @@ Humor</string>
    <property name="font">
     <font>
      <family>Orbitron</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -382,6 +406,8 @@ Chamber</string>
    <property name="font">
     <font>
      <family>Orbitron</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -409,6 +435,8 @@ Chamber</string>
    <property name="font">
     <font>
      <family>Orbitron</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -437,6 +465,8 @@ Ligament</string>
    <property name="font">
     <font>
      <family>Orbitron</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -464,6 +494,8 @@ Ligament</string>
    <property name="font">
     <font>
      <family>Orbitron</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -521,6 +553,8 @@ Ligament</string>
    <property name="font">
     <font>
      <family>Orbitron</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -548,6 +582,8 @@ Ligament</string>
    <property name="font">
     <font>
      <family>Orbitron</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -576,6 +612,8 @@ Chamber</string>
    <property name="font">
     <font>
      <family>Orbitron</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -603,6 +641,8 @@ Chamber</string>
    <property name="font">
     <font>
      <family>Orbitron</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
@@ -630,6 +670,8 @@ Chamber</string>
    <property name="font">
     <font>
      <family>Orbitron</family>
+     <hintingpreference>PreferDefaultHinting</hintingpreference>
+     <fontweight>Medium</fontweight>
     </font>
    </property>
    <property name="cursor">
