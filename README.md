@@ -128,6 +128,7 @@ keeping the project modular was really important. Performance also came up — m
 graphics and overlays ran smoothly on different systems took extra polish. And on top of the
 technical side, it was always a balancing act to simplify complex biology into something clear,
 engaging, and not overwhelming.
+
 ---
 
 ## Authors
