@@ -35,20 +35,33 @@
 #include "eyemodel.h"
 
 EyeModel::EyeModel(QWidget *parent)
-	: QWidget(parent), ui(new Ui::EyeModel)
+	: QDialog(parent), ui = new Ui::EyeModel;
 {
-	{
-		ui->setupUi(this);
-		// QPixmap pixmap("C:/Users/Alexa/OneDrive/Desktop/Eye Project/OcuKnow/src/assets/halfeyeimage2.png");
+	ui->setupUi(this);
+    // QPixmap pixmap("C:/Users/Alexa/OneDrive/Desktop/Eye Project/OcuKnow/src/assets/halfeyeimage2.png");
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 		QLabel *ImageEye = new QLabel(this);
 		QPixmap pixmap("qrc:/assets/halfeyeimage2.png");
 		qDebug() << "Image exists:" << QFileInfo("qrc:/assets/halfeyeimage2.png").exists();
 		ui->ImageEye->setPixmap(pixmap.scaled(ui->ImageEye->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
+=======
+    QPixmap pixmap(":/assets/halfeyeimage2.png");
+    qDebug() << "Image exists:" << QFileInfo(":/assets/halfeyeimage2.png").exists();
+    ui->label->setPixmap(pixmap.scaled(ui->label->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
+>>>>>>> parent of b71e307 (get like me)
+=======
+    QPixmap pixmap(":/assets/halfeyeimage2.png");
+    qDebug() << "Image exists:" << QFileInfo(":/assets/halfeyeimage2.png").exists();
+    ui->label->setPixmap(pixmap.scaled(ui->label->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
+>>>>>>> parent of b71e307 (get like me)
 
-		// ui->label->setPixmap(pixmap.scaled(ui->label->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
-		// ui->label->setPixmap(image);
+    // ui->label->setPixmap(pixmap.scaled(ui->label->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
+    // ui->label->setPixmap(image);
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 		if (pixmap.isNull())
 		{
 			qDebug() << "Error";
@@ -58,24 +71,39 @@ EyeModel::EyeModel(QWidget *parent)
 			ui->ImageEye->setPixmap(pixmap);
 			qDebug() << "Success";
 		}
+=======
+=======
+>>>>>>> parent of b71e307 (get like me)
+    if (pixmap.isNull())
+    {
+        qDebug() << "Error";
+    } else {
+    	ui->label->setPixmap(pixmap);
+    	qDebug() << "Success";
+    }
+<<<<<<< HEAD
+>>>>>>> parent of b71e307 (get like me)
+=======
+>>>>>>> parent of b71e307 (get like me)
 
-		QMediaPlayer *player = new QMediaPlayer(this);
-		QAudioOutput *audioOutput = new QAudioOutput(this);
-		player->setAudioOutput(audioOutput);
-		player->setSource(QUrl("qrc:/assets/vibin_chosic.ogg"));
-		audioOutput->setVolume(0.5);
-		player->play();
-/*
-		ui->Iris->setToolTip("Iris"
-							 "<ul>"
-							 "<li>ir/o - iris</li>"
-							 "<li>irid/o - iris</li>"
-							 "<li>iridal - pertaining to the iris</li>"
-							 "<li>iridectomy - excision of the iris</li>"
-							 "<li>Regulates the amount of light that enters your eye by controlling dilation and constriction. It is the coloured, visible part of your eye in front of the lens. Located behind the cornea and in front of the crystalline lens, this structure separates the anterior and posterior chambers of the eye.</li>"
-							 "</ul>)");
 
-		ui->Pupil->setToolTip(R"DELIM(Pupil
+	QMediaPlayer *player = new QMediaPlayer(this);
+	QAudioOutput *audioOutput = new QAudioOutput(this);
+	player->setAudioOutput(audioOutput);
+	player->setSource(QUrl("qrc:/assets/vibin_chosic.ogg"));
+	audioOutput->setVolume(0.5);
+	player->play();
+
+	ui->Iris->setToolTip("Iris"
+"<ul>"
+"<li>ir/o - iris</li>"
+"<li>irid/o - iris</li>"
+"<li>iridal - pertaining to the iris</li>"
+"<li>iridectomy - excision of the iris</li>"
+"<li>Regulates the amount of light that enters your eye by controlling dilation and constriction. It is the coloured, visible part of your eye in front of the lens. Located behind the cornea and in front of the crystalline lens, this structure separates the anterior and posterior chambers of the eye.</li>"
+"</ul>)");
+
+	ui->Pupil->setToolTip(R"DELIM(Pupil
 <ul>
 <li>pupill/o - pupil</li>
 <li>pupillary - pertaining to the pupil</li>
@@ -83,7 +111,7 @@ EyeModel::EyeModel(QWidget *parent)
 <li>Regulates how much light enters the eye. Its size is automatically varied. It is the dark center in the middle of the iris.</li>
 </ul>)DELIM");
 
-		ui->Cornea->setToolTip(R"DELIM(Cornea
+	ui->Cornea->setToolTip(R"DELIM(Cornea
 <ul>
 <li>corne/o - cornea</li>
 <li>kerat/o - cornea</li>
@@ -93,7 +121,7 @@ EyeModel::EyeModel(QWidget *parent)
 <li>Transparent circular part of the front eye, refracts the light entering the eye onto the lens and then onto the retina. Contains no blood vessels and is extremely sensitive to pain.</li>
 </ul>)DELIM");
 
-		ui->Sclera->setToolTip(R"DELIM(Sclera
+	ui->Sclera->setToolTip(R"DELIM(Sclera
 <ul>
 <li>scler/o - sclera</li>
 <li>scleral - pertaining to the sclera</li>
@@ -102,7 +130,7 @@ EyeModel::EyeModel(QWidget *parent)
 <li>White part of the eye, protects the inner structures of the eye and maintains the shape of the eyeball.</li>
 </ul>)DELIM");
 
-		ui->Choroid->setToolTip(R"DELIM(Choroid
+	ui->Choroid->setToolTip(R"DELIM(Choroid
 <ul>
 <li>choroid/o - choroid</li>
 <li>choroidal - pertaining to the choroid</li>
@@ -112,7 +140,7 @@ EyeModel::EyeModel(QWidget *parent)
 <li>Middle layer of the eye, contains blood vessels and connective tissue. It is located between the sclera and retina.</li>
 </ul>)DELIM");
 
-		ui->Lens->setToolTip(R"DELIM(Lens
+	ui->Lens->setToolTip(R"DELIM(Lens
 <ul>
 <li>phac/o - lens</li>
 <li>phak/o - lens</li>
@@ -123,7 +151,7 @@ EyeModel::EyeModel(QWidget *parent)
 It is flexible and can change shape to focus on objects at different distances.</li>
 <ul>)DELIM");
 
-		ui->Retina->setToolTip(R"DELIM(Retina
+    ui->Retina->setToolTip(R"DELIM(Retina
 <ul>
 <li>retin/o - retina</li>
 <li>retinal - pertaining to the retina</li>
@@ -133,7 +161,7 @@ It is flexible and can change shape to focus on objects at different distances.<
 <li>Inner layer of the eye, contains photoreceptor cells (rods and cones) that convert light into electrical signals.\nThese signals are sent to the brain via the optic nerve.</li>
 </ul>)DELIM");
 
-		ui->VitreousBody->setToolTip(R"DELIM(Vitreous Body
+    ui->VitreousBody->setToolTip(R"DELIM(Vitreous Body
 <ul>
 <li>vitre/o - vitreous</li>
 <li>vitreous humor - clear gel-like substance that fills the space between the lens and retina</li>
@@ -143,23 +171,32 @@ It is flexible and can change shape to focus on objects at different distances.<
 <li>Vitreous humor is a clear gel-like substance that fills the space between the lens and retina.\nIt helps maintain the shape of the eye and provides support to the retina.</li>
 </ul>)DELIM");
 
-		ui->OpticDisk->setToolTip(R"DELIM(Optic Disk
+    ui->OpticDisk->setToolTip(R"DELIM(Optic Disk
 <ul>
 <li>papill/o - optic disk</li>
 <li>Known as the blind spot, located on the retina. Visible point where the optic nerve leaves the eyeball and where retinal blood vessels enter and leave.</li>
 </ul>)DELIM");
-
-		ui->OpticNerve->setToolTip(R"DELIM(Optic Nerve)DELIM");
-*/
-	}
+    
+    ui->OpticNerve->setToolTip(R"DELIM(Optic Nerve)DELIM");
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 EyeModel::~EyeModel()
 {
     delete ui;
 }
 	// Prob don't need this
+=======
+=======
+>>>>>>> parent of b71e307 (get like me)
+// Prob don't need this
 
-	// QToolButton *toolButton = new QToolButton(this);
-	// toolButton->setText("Insert Text");
-	// toolButton->setPopupMode(QToolButton::MenuButtonPopup);
+// QToolButton *toolButton = new QToolButton(this);
+// toolButton->setText("Insert Text");
+// toolButton->setPopupMode(QToolButton::MenuButtonPopup);
+<<<<<<< HEAD
+>>>>>>> parent of b71e307 (get like me)
+=======
+>>>>>>> parent of b71e307 (get like me)
+

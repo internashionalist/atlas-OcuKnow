@@ -108,6 +108,14 @@ Clicking "Take Quiz" starts a multiple-choice quiz based on `questions.txt`. It 
 
 ---
 
+<img width="792" height="451" alt="Screenshot 2025-04-21 135342" src="https://github.com/user-attachments/assets/c8f24497-8a67-4f67-8b4c-2e47c95950d6" />
+
+<img width="600" height="200" alt="OcuKnow banner" src="https://github.com/user-attachments/assets/f6c3dc91-f785-469f-ad0e-1b19a4b0acf4" />
+
+
+
+---
+
 ## Authors
 
 - **Ariel Lopez**  
@@ -130,3 +138,4 @@ Clicking "Take Quiz" starts a multiple-choice quiz based on `questions.txt`. It 
 ## License
 
 This project is released under the Public Domain. Free to use, modify, and distribute.
+
