@@ -138,7 +138,10 @@ engaging, and not overwhelming.
   [LinkedIn](https://www.linkedin.com/in/arielnkm369)  
   [Email](alexandrea.ariel@gmail.com)
 
-	Ariel Lopez womp womp womp
+  Ariel Lopez has an innovative mind and a passion to make lives better with technology.
+  She has a strong background in Systems programming, Linux, Data science, Data Lakes,
+  Algorithms and Blockchaining. If there is an opportunity to create something better
+  she makes due progress to the best of her abilities.
 
 - **Stephen Newby**  
   [GitHub](https://github.com/TheSnewby/)  
@@ -150,7 +153,7 @@ engaging, and not overwhelming.
 - **Nash Thames**  
   [GitHub](https://github.com/internashionalist)  
   [LinkedIn](https://www.linkedin.com/in/nashthames/)  
-  [Email](taylor.thames@atlasschool.com)
+  [Email](nash@nashthames.com)
 
 	Nash Thames is an aspiring software developer with a strong foundation in computer science,
 	including advanced algorithms, systems programming, and Linux environments. 
